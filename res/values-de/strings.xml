@@ -1134,7 +1134,7 @@
     <string name="sound_category_notification_title" msgid="3502115998790286943">"Benachrichtigungen"</string>
     <string name="sound_category_feedback_title" msgid="4399742321363475393">"Feedback"</string>
 
-    <string name="biff_settings_title">BiffMod</string>
+    <string name="biff_settings_title">cm6-BiffMod</string>
     <string name="launcher_settings_title">ADW.Launcher</string>
 
     <!-- extra OpenVPN settings by takuo -->
