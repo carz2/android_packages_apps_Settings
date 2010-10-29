@@ -985,6 +985,7 @@ public class RunningServices extends ListActivity
         try {
             long memFree = 0;
             long memCached = 0;
+            long memSwapCache = 0;
             FileInputStream is = new FileInputStream("/proc/meminfo");
             int len = is.read(mBuffer);
             is.close();
@@ -996,12 +997,15 @@ public class RunningServices extends ListActivity
                 } else if (matchText(mBuffer, i, "Cached")) {
                     i += 6;
                     memCached = extractMemValue(mBuffer, i);
+                } else if (matchText(mBuffer, i, "SwapCached")) {
+                    i += 10;
+                    memSwapCache = extractMemValue(mBuffer, i);
                 }
                 while (i < BUFLEN && mBuffer[i] != '\n') {
                     i++;
                 }
             }
-            return memFree + memCached;
+            return memFree + memCached + memSwapCache;
         } catch (java.io.FileNotFoundException e) {
         } catch (java.io.IOException e) {
         }
