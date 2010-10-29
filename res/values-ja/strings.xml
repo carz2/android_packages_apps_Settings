@@ -1129,7 +1129,7 @@
     <string name="sound_category_notification_title" msgid="3502115998790286943">"通知"</string>
     <string name="sound_category_feedback_title" msgid="4399742321363475393">"フィードバック"</string>
 
-    <string name="cm_settings_title">CyanogenMod設定</string>
+    <string name="biff_settings_title">BiffMod設定</string>
 
     <string name="possibleButtons">"可能なボタン"</string>
     <string name="toggleWifi">"Wi-Fiトグル"</string>

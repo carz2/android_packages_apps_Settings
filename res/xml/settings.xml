@@ -55,8 +55,8 @@
 
 	<!-- CM Settings -->
         <com.android.settings.IconPreferenceScreen
-            settings:icon="@drawable/ic_cyanogenmod"
-            android:title="@string/cm_settings_title">
+            settings:icon="@drawable/ic_biffmod"
+            android:title="@string/biff_settings_title">
             <intent
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="com.cyanogenmod.cmparts"
