@@ -190,6 +190,7 @@
         </activity>
 
         <activity android:name=".vpn.VpnSettings"
+                android:label="@string/vpn_settings_title"
                 android:configChanges="orientation|keyboardHidden"
                 android:clearTaskOnLaunch="true">
             <intent-filter>
@@ -197,6 +198,7 @@
                 <action android:name="android.net.vpn.SETTINGS" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
+                <category android:name="com.android.settings.SHORTCUT" />
             </intent-filter>
         </activity>
 
@@ -204,6 +206,9 @@
                 android:configChanges="orientation|keyboardHidden">
         </activity>
         <activity android:name=".vpn.VpnEditor"
+                android:configChanges="orientation|keyboardHidden">
+        </activity>
+        <activity android:name=".vpn.OpenvpnEditor$AdvancedSettings"
                 android:configChanges="orientation|keyboardHidden">
         </activity>
 
@@ -713,6 +718,13 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
                 <category android:name="android.intent.category.VOICE_LAUNCH" />
+            </intent-filter>
+        </activity>
+
+	<activity android:name=".battery_history.BatteryHistory" android:label="@string/battery_history_label">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEVELOPMENT_PREFERENCE" />
             </intent-filter>
         </activity>
 
