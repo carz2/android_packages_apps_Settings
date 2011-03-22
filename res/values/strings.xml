@@ -1056,6 +1056,10 @@
     <string name="vibrate_title">Vibrate</string>
     <!-- Sound settings screen, setting option summary text -->
     <string name="vibrate_summary">Vibration feedback for calls and notifications</string>
+    <!-- Sound settings screen, setting option name checkbox -->
+    <string name="volume_control_silent_title">Silent state</string>
+    <!-- Sound settings screen, setting option summary text -->
+    <string name="volume_control_silent_summary">Add a state for complete silence to volume control</string>
     <!-- Sound settings screen, setting option name -->
     <string name="notification_sound_title">Notification ringtone</string>
     <!-- Sound settings screen, setting option summary text -->
@@ -1999,7 +2003,7 @@ found in the list of installed applications.</string>
     <string name="testing_phone_info">Phone information</string>
     <!-- In the Testing screen. The item title of the activity that shows a bunch of battery-related information.  -->
     <string name="testing_battery_info">Battery information</string>
-    <!-- In the Testing screen. The item title of the activity that shows a bunch of historical battery-related information. -->
+    <!-- In the Testing screen. The item title of the activity that shows a bunch of historical battery-related information.  -->
     <string name="testing_battery_history">Battery history</string>
     <!-- Do not translate. In the Testing screen. The item title of the activity that shows a bunch of SIM-related operations.  -->
     <string name="testing_sim_toolkit">SIM toolkit</string>
@@ -2171,7 +2175,7 @@ found in the list of installed applications.</string>
 
     <!-- XXX remove? Used for Screen on time message in BatteryHistory -->
     <string name="battery_history_screen_on_plugged">Plugged in:</string>
-    
+
     <!-- XXX remove? Strings used for displaying usage statistics -->
     <string name="usage_stats_label">Usage statistics</string>
 
