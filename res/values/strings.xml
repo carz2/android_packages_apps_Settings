@@ -2774,5 +2774,5 @@ found in the list of installed applications.</string>
     <string name="sound_category_feedback_title">Feedback</string>
 
     <!-- ezGb Extras-->
-    <string name="ezgb_extras_settings_title">EzGingerbread Extras</string>
+    <string name="ezgb_extras_settings_title">DietGingerbread Settings</string>
 </resources>
