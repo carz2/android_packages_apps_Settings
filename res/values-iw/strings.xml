@@ -90,7 +90,10 @@
     <string name="bluetooth" msgid="5549625000628014477">"Bluetooth"</string>
     <string name="bluetooth_visibility" msgid="2930835434091839916">"בר-גילוי"</string>
     <string name="bluetooth_is_discoverable" msgid="1205694503775884903">"גלוי למשך <xliff:g id="DISCOVERABLE_TIME_PERIOD">%1$s</xliff:g> שניות…"</string>
+    <string name="bluetooth_is_discoverable_always" msgid="8573385118329733931">"גלוי"</string>
     <string name="bluetooth_not_discoverable" msgid="128269993123955177">"הפוך את ההתקן לבר-גילוי"</string>
+    <string name="bluetooth_visibility_timeout" msgid="6634508002347847278">"זמן קצוב לתפוגה של מצב גלוי"</string>
+    <string name="bluetooth_visibility_timeout_summary" msgid="6483353842671501585">"הגדר במשך כמה זמן ההתקן יהיה גלוי"</string>
     <string name="bluetooth_lock_voice_dialing" msgid="3139322992062086225">"נעל חיוג קולי"</string>
     <string name="bluetooth_lock_voice_dialing_summary" msgid="4741338867496787042">"מנע את השימוש בחייגן Bluetooth כאשר הצג נעול"</string>
     <string name="bluetooth_devices" msgid="1886018064039454227">"התקני Bluetooth"</string>
@@ -115,7 +118,9 @@
     <string name="bluetooth_permission_request" msgid="1523129741266262748">"בקשת הרשאה של Bluetooth"</string>
     <string name="bluetooth_ask_enablement" msgid="2342558978033892004">"יישום בטלפון מבקש הרשאה להפעיל Bluetooth. האם ברצונך להפעיל?"</string>
     <string name="bluetooth_ask_discovery" msgid="669870705606180872">"יישום בטלפון מבקש הרשאה להפוך את הטלפון לגלוי להתקני Bluetooth אחרים למשך <xliff:g id="TIMEOUT">%1$d</xliff:g> שניות. האם ברצונך לעשות זאת?"</string>
+    <string name="bluetooth_ask_lasting_discovery" msgid="3413855805411554871">"יישום בטלפון מבקש הרשאה להפוך את הטלפון ל\"גלוי תמיד\" להתקני Bluetooth אחרים. האם ברצונך לעשות זאת?"</string>
     <string name="bluetooth_ask_enablement_and_discovery" msgid="7220210326619399542">"יישום בטלפון מבקש הרשאה להפעיל Bluetooth ולהפוך את הטלפון לגלוי להתקנים אחרים למשך <xliff:g id="TIMEOUT">%1$d</xliff:g> שניות. האם ברצונך לבצע פעולות אלה?"</string>
+    <string name="bluetooth_ask_enablement_and_lasting_discovery" msgid="7471195931669103553">"יישום בטלפון מבקש הרשאה להפעיל Bluetooth ולהפוך את הטלפון לגלוי להתקנים אחרים. האם ברצונך לבצע זאת?"</string>
     <string name="bluetooth_turning_on" msgid="3107102168379705771">"מפעיל Bluetooth…"</string>
     <string name="date_and_time" msgid="4114084177056654663">"הגדרות תאריך ושעה"</string>
     <string name="date_time_12_hour_sample" msgid="3259617262618020574">"13:00"</string>
@@ -584,6 +589,7 @@
     <string name="apn_auth_type_chap" msgid="3369626283789068360">"CHAP"</string>
     <string name="apn_auth_type_pap_chap" msgid="9102343063036134541">"PAP או CHAP"</string>
     <string name="apn_type" msgid="469613123902220544">"סוג APN"</string>
+    <string name="apn_protocol" msgid="3272222921649348640">"פרוטוקול APN"</string>
     <string name="menu_delete" msgid="6981294422841124659">"מחק APN"</string>
     <string name="menu_new" msgid="3014205883303921729">"APN חדש"</string>
     <string name="menu_save" msgid="8109345640668285399">"שמור"</string>
@@ -1122,16 +1128,16 @@
     <string name="credentials_erased" msgid="7700309135582200849">"אחסון האישורים נמחק."</string>
     <string name="credentials_enabled" msgid="7588607413349978930">"אחסון האישורים מופעל."</string>
     <string name="credentials_disabled" msgid="7453188089059045380">"אחסון אישורים מושבת."</string>
-    <!-- outdated translation 5563670455056905298 -->     <string name="encrypted_fs_category" msgid="1841367653663913956">"מערכת קבצים מוצפנים"</string>
-    <!-- outdated translation 1460957282314335666 -->     <string name="encrypted_fs_enable" msgid="3884033081603327729">"הצפנה של נתוני משתמש פרטיים"</string>
-    <!-- outdated translation 1350828979802222331 -->     <string name="encrypted_fs_enable_summary" msgid="5635188119509076089">"הפוך אחסון של מערכת קבצים מוצפנים לפעיל עבור נתוני משתמש פרטיים בהתקן זה"</string>
-    <!-- outdated translation 5616902699813992220 -->     <string name="encrypted_fs_enable_dialog" msgid="919487211207214266">"הפיכת מערכות קבצים מוצפנים לפעילות דורשת מחיקת נתונים מהתקן."</string>
-    <!-- outdated translation 6188718276152942357 -->     <string name="encrypted_fs_disable_dialog" msgid="6960413613985682501">"השבתת מערכות קבצים מוצפנים דורשת מחיקת נתוני התקן."</string>
-    <!-- outdated translation 5517966150893551199 -->     <string name="encrypted_fs_enable_button" msgid="8453841319751433751">"הפוך לפעיל"</string>
-    <!-- outdated translation 5723342350828112970 -->     <string name="encrypted_fs_disable_button" msgid="8468354944060220496">"השבת"</string>
-    <!-- outdated translation 1629526807926334692 -->     <string name="encrypted_fs_cancel_button" msgid="4785921255266305799">"ביטול"</string>
-    <!-- outdated translation 7438020150015354683 -->     <string name="encrypted_fs_cancel_confirm" msgid="853572431153803557">"השינוי במצב של מערכות קבצים מוצפנים בוטל."</string>
-    <!-- outdated translation 7428547491734194431 -->     <string name="encrypted_fs_alert_dialog_title" msgid="583462447886934755">"אזהרה של מערכות קבצים מוצפנים"</string>
+    <string name="encrypted_fs_category" msgid="1841367653663913956">"מערכת קבצים מוצפנים"</string>
+    <string name="encrypted_fs_enable" msgid="3884033081603327729">"הצפנה של נתוני משתמש פרטיים"</string>
+    <string name="encrypted_fs_enable_summary" msgid="5635188119509076089">"הפוך אחסון של מערכת קבצים מוצפנים לפעיל עבור נתוני משתמש פרטיים בהתקן זה"</string>
+    <string name="encrypted_fs_enable_dialog" msgid="919487211207214266">"הפעלת מערכות קבצים מוצפנים דורשת מחיקת נתונים מהתקן."</string>
+    <string name="encrypted_fs_disable_dialog" msgid="6960413613985682501">"השבתת מערכות קבצים מוצפנים דורשת מחיקת נתונים מהתקן."</string>
+    <string name="encrypted_fs_enable_button" msgid="8453841319751433751">"הפוך לפעיל"</string>
+    <string name="encrypted_fs_disable_button" msgid="8468354944060220496">"השבת"</string>
+    <string name="encrypted_fs_cancel_button" msgid="4785921255266305799">"ביטול"</string>
+    <string name="encrypted_fs_cancel_confirm" msgid="853572431153803557">"השינוי במצב של מערכות קבצים מוצפנים בוטל."</string>
+    <string name="encrypted_fs_alert_dialog_title" msgid="583462447886934755">"אזהרה של מערכות קבצים מוצפנים"</string>
     <string name="emergency_tone_title" msgid="1055954530111587114">"צליל חירום"</string>
     <string name="emergency_tone_summary" msgid="722259232924572153">"הגדר אופן פעולה בעת ביצוע שיחת חירום"</string>
     <string name="privacy_settings" msgid="9206631214140954954">"פרטיות"</string>
@@ -1159,4 +1165,8 @@
     <string name="sound_category_calls_title" msgid="3688531959256239012">"שיחות נכנסות"</string>
     <string name="sound_category_notification_title" msgid="3502115998790286943">"התראות"</string>
     <string name="sound_category_feedback_title" msgid="4399742321363475393">"משוב"</string>
+    <string name="wimax_settings" msgid="1574837328738396794">"הגדרות ‎4G"</string>
+    <string name="wimax_settings_summary" msgid="3207355006084135453">"הגדר ונהל רשת ומודם של ‎4G"</string>
+    <string name="status_wimax_mac_address" msgid="8390791848661413416">"כתובת ‎4G MAC"</string>
+    <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"עדכוני מערכת נוספים"</string>
 </resources>

@@ -90,7 +90,13 @@
     <string name="bluetooth" msgid="5549625000628014477">"Bluetooth"</string>
     <string name="bluetooth_visibility" msgid="2930835434091839916">"Visibel"</string>
     <string name="bluetooth_is_discoverable" msgid="1205694503775884903">"Visibel durant <xliff:g id="DISCOVERABLE_TIME_PERIOD">%1$s</xliff:g> secundas…"</string>
+    <!-- no translation found for bluetooth_is_discoverable_always (8573385118329733931) -->
+    <skip />
     <string name="bluetooth_not_discoverable" msgid="128269993123955177">"Far daventar visibel l\'apparat"</string>
+    <!-- no translation found for bluetooth_visibility_timeout (6634508002347847278) -->
+    <skip />
+    <!-- no translation found for bluetooth_visibility_timeout_summary (6483353842671501585) -->
+    <skip />
     <string name="bluetooth_lock_voice_dialing" msgid="3139322992062086225">"Bloccar la cumposiziun vocala"</string>
     <string name="bluetooth_lock_voice_dialing_summary" msgid="4741338867496787042">"Impedir l\'utilisaziun dal dialer bluetooth sch\'il visur è bloccà"</string>
     <string name="bluetooth_devices" msgid="1886018064039454227">"Apparats Bluetooth"</string>
@@ -115,7 +121,11 @@
     <string name="bluetooth_permission_request" msgid="1523129741266262748">"Dumonda d\'autorisaziun Bluetooth"</string>
     <string name="bluetooth_ask_enablement" msgid="2342558978033892004">"Ina applicaziun sin Voss telefon dumonda l\'autorisaziun dad activar bluetooth. Permetter?"</string>
     <string name="bluetooth_ask_discovery" msgid="669870705606180872">"Ina applicaziun sin Voss telefonin dumonda l\'autorisaziun dad activar la visibilitad da Voss telefonin per auters apparats da bluetooth durant <xliff:g id="TIMEOUT">%1$d</xliff:g> secundas. Vulais Vus quai?"</string>
+    <!-- no translation found for bluetooth_ask_lasting_discovery (3413855805411554871) -->
+    <skip />
     <string name="bluetooth_ask_enablement_and_discovery" msgid="7220210326619399542">"Ina applicaziun sin Voss telefonin dumonda l\'autorisaziun dad activar bluetooth e far visibel Voss telefonin per auters apparats durant <xliff:g id="TIMEOUT">%1$d</xliff:g> secundas. Vulais Vus quai?"</string>
+    <!-- no translation found for bluetooth_ask_enablement_and_lasting_discovery (7471195931669103553) -->
+    <skip />
     <string name="bluetooth_turning_on" msgid="3107102168379705771">"Bluetooth vegn activà…"</string>
     <string name="date_and_time" msgid="4114084177056654663">"Parameters da data e da temp"</string>
     <string name="date_time_12_hour_sample" msgid="3259617262618020574">"1:00:00"</string>
@@ -338,7 +348,9 @@
     <skip />
     <!-- no translation found for nfc_quick_toggle_summary (1988408027741447231) -->
     <skip />
-    <string name="nfc_toggle_error" msgid="2233172102497535522">"Ina errur è succedida."</string>
+    <!-- no translation found for nfc_toggle_error (2233172102497535522) -->
+    <!-- no translation found for nfc_toggle_error (8998642457947607263) -->
+    <skip />
     <string name="wifi_quick_toggle_title" msgid="874495178395350104">"WLAN"</string>
     <string name="wifi_quick_toggle_summary" msgid="1047950931623694366">"Activar WLAN"</string>
     <string name="wifi_settings" msgid="4746946030627213196">"Parameters WLAN"</string>
@@ -587,6 +599,8 @@
     <string name="apn_auth_type_chap" msgid="3369626283789068360">"CHAP"</string>
     <string name="apn_auth_type_pap_chap" msgid="9102343063036134541">"PAP u CHAP"</string>
     <string name="apn_type" msgid="469613123902220544">"Tip dad APN (num dal punct d\'access)"</string>
+    <!-- no translation found for apn_protocol (3272222921649348640) -->
+    <skip />
     <string name="menu_delete" msgid="6981294422841124659">"Stizzar APN"</string>
     <string name="menu_new" msgid="3014205883303921729">"Nov APN"</string>
     <string name="menu_save" msgid="8109345640668285399">"Memorisar"</string>
@@ -1181,4 +1195,12 @@
     <string name="sound_category_calls_title" msgid="3688531959256239012">"Cloms entrants"</string>
     <string name="sound_category_notification_title" msgid="3502115998790286943">"Avis"</string>
     <string name="sound_category_feedback_title" msgid="4399742321363475393">"Commentaris"</string>
+    <!-- no translation found for wimax_settings (1574837328738396794) -->
+    <skip />
+    <!-- no translation found for wimax_settings_summary (3207355006084135453) -->
+    <skip />
+    <!-- no translation found for status_wimax_mac_address (8390791848661413416) -->
+    <skip />
+    <!-- no translation found for additional_system_update_settings_list_item_title (214987609894661992) -->
+    <skip />
 </resources>

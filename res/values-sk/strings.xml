@@ -90,7 +90,10 @@
     <string name="bluetooth" msgid="5549625000628014477">"Bluetooth"</string>
     <string name="bluetooth_visibility" msgid="2930835434091839916">"Viditeľné"</string>
     <string name="bluetooth_is_discoverable" msgid="1205694503775884903">"Zariadenie je viditeľné v intervale <xliff:g id="DISCOVERABLE_TIME_PERIOD">%1$s</xliff:g> s"</string>
+    <string name="bluetooth_is_discoverable_always" msgid="8573385118329733931">"Viditeľné"</string>
     <string name="bluetooth_not_discoverable" msgid="128269993123955177">"Prepne zariadenie do viditeľného režimu"</string>
+    <string name="bluetooth_visibility_timeout" msgid="6634508002347847278">"Časový limit viditeľného režimu vypršal"</string>
+    <string name="bluetooth_visibility_timeout_summary" msgid="6483353842671501585">"Nastavte dobu, počas ktorej bude zariadenie vo viditeľnom režime"</string>
     <string name="bluetooth_lock_voice_dialing" msgid="3139322992062086225">"Uzamknúť hlasové vytáčanie"</string>
     <string name="bluetooth_lock_voice_dialing_summary" msgid="4741338867496787042">"Zabrániť použitiu vytáčania Bluetooth pri uzamknutej obrazovke"</string>
     <string name="bluetooth_devices" msgid="1886018064039454227">"Zariadenia Bluetooth"</string>
@@ -115,7 +118,9 @@
     <string name="bluetooth_permission_request" msgid="1523129741266262748">"Žiadosť o povolenie zariadenia Bluetooth"</string>
     <string name="bluetooth_ask_enablement" msgid="2342558978033892004">"Aplikácia v telefóne vyžaduje povolenie na zapnutie pripojenia Bluetooth. Chcete udeliť toto povolenie?"</string>
     <string name="bluetooth_ask_discovery" msgid="669870705606180872">"Aplikácia v telefóne požaduje povolenie na nastavenie telefónu do viditeľného režimu pre ostatné zariadenia Bluetooth na <xliff:g id="TIMEOUT">%1$d</xliff:g> s. Chcete udeliť toto povolenie?"</string>
+    <string name="bluetooth_ask_lasting_discovery" msgid="3413855805411554871">"Aplikácia v telefóne vyžaduje povolenie na trvalé nastavenie telefónu do viditeľného režimu pre ostatné zariadenia Bluetooth. Chcete udeliť toto povolenie?"</string>
     <string name="bluetooth_ask_enablement_and_discovery" msgid="7220210326619399542">"Aplikácia v telefóne požaduje povolenie na zapnutie pripojenia Bluetooth a nastavenie telefónu do viditeľného režimu na <xliff:g id="TIMEOUT">%1$d</xliff:g> s. Chcete udeliť toto povolenie?"</string>
+    <string name="bluetooth_ask_enablement_and_lasting_discovery" msgid="7471195931669103553">"Aplikácia v telefóne požaduje povolenie na zapnutie pripojenia Bluetooth a nastavenie telefónu do viditeľného režimu. Chcete udeliť toto povolenie?"</string>
     <string name="bluetooth_turning_on" msgid="3107102168379705771">"Prebieha zapínanie rozhrania Bluetooth..."</string>
     <string name="date_and_time" msgid="4114084177056654663">"Nastavenia dátumu a času"</string>
     <string name="date_time_12_hour_sample" msgid="3259617262618020574">"13:00"</string>
@@ -584,6 +589,7 @@
     <string name="apn_auth_type_chap" msgid="3369626283789068360">"CHAP"</string>
     <string name="apn_auth_type_pap_chap" msgid="9102343063036134541">"PAP alebo CHAP"</string>
     <string name="apn_type" msgid="469613123902220544">"Typ názvu prístupového bodu (APN)"</string>
+    <string name="apn_protocol" msgid="3272222921649348640">"Protokol APN"</string>
     <string name="menu_delete" msgid="6981294422841124659">"Odstrániť názov prístupového bodu (APN)"</string>
     <string name="menu_new" msgid="3014205883303921729">"Nový názov prístupového bodu (APN)"</string>
     <string name="menu_save" msgid="8109345640668285399">"Uložiť"</string>
@@ -1122,16 +1128,16 @@
     <string name="credentials_erased" msgid="7700309135582200849">"Ukladací priestor poverení je vymazané."</string>
     <string name="credentials_enabled" msgid="7588607413349978930">"Ukladací priestor poverení je aktivovaný."</string>
     <string name="credentials_disabled" msgid="7453188089059045380">"Ukladací priestor poverení je vypnutý."</string>
-    <!-- outdated translation 5563670455056905298 -->     <string name="encrypted_fs_category" msgid="1841367653663913956">"Systém EFS (Encrypted File System)"</string>
-    <!-- outdated translation 1460957282314335666 -->     <string name="encrypted_fs_enable" msgid="3884033081603327729">"Šifrovať súkromné údaje používateľa"</string>
-    <!-- outdated translation 1350828979802222331 -->     <string name="encrypted_fs_enable_summary" msgid="5635188119509076089">"Povoliť v tomto zariadení ukladací priestor systému EFS (Encrypted File System) pre súkromné údaje používateľov"</string>
-    <!-- outdated translation 5616902699813992220 -->     <string name="encrypted_fs_enable_dialog" msgid="919487211207214266">"Povolenie systémov EFS (Encrypted File System) vyžaduje vymazanie údajov zariadenia."</string>
-    <!-- outdated translation 6188718276152942357 -->     <string name="encrypted_fs_disable_dialog" msgid="6960413613985682501">"Zakázanie systémov EFS (Encrypted File System) vyžaduje vymazanie údajov zariadenia."</string>
-    <!-- outdated translation 5517966150893551199 -->     <string name="encrypted_fs_enable_button" msgid="8453841319751433751">"Povoliť"</string>
-    <!-- outdated translation 5723342350828112970 -->     <string name="encrypted_fs_disable_button" msgid="8468354944060220496">"Zakázať"</string>
-    <!-- outdated translation 1629526807926334692 -->     <string name="encrypted_fs_cancel_button" msgid="4785921255266305799">"Zrušiť"</string>
-    <!-- outdated translation 7438020150015354683 -->     <string name="encrypted_fs_cancel_confirm" msgid="853572431153803557">"Zmena režimu systémov EFS (Encrypted File System) bola zrušená."</string>
-    <!-- outdated translation 7428547491734194431 -->     <string name="encrypted_fs_alert_dialog_title" msgid="583462447886934755">"Upozornenie systémov EFS (Encrypted File System)."</string>
+    <string name="encrypted_fs_category" msgid="1841367653663913956">"Systém EFS (Encrypted File System)"</string>
+    <string name="encrypted_fs_enable" msgid="3884033081603327729">"Šifrovať súkromné údaje používateľa"</string>
+    <string name="encrypted_fs_enable_summary" msgid="5635188119509076089">"Povoliť v tomto zariadení ukladací priestor systému EFS (Encrypted File System) pre súkromné údaje používateľov"</string>
+    <string name="encrypted_fs_enable_dialog" msgid="919487211207214266">"Povolenie systémov EFS (Encrypted File System) vyžaduje vymazanie údajov zariadenia."</string>
+    <string name="encrypted_fs_disable_dialog" msgid="6960413613985682501">"Zakázanie systémov EFS (Encrypted File System) vyžaduje vymazanie údajov zariadenia."</string>
+    <string name="encrypted_fs_enable_button" msgid="8453841319751433751">"Povoliť"</string>
+    <string name="encrypted_fs_disable_button" msgid="8468354944060220496">"Zakázať"</string>
+    <string name="encrypted_fs_cancel_button" msgid="4785921255266305799">"Zrušiť"</string>
+    <string name="encrypted_fs_cancel_confirm" msgid="853572431153803557">"Zmena režimu systémov EFS (Encrypted File System) bola zrušená."</string>
+    <string name="encrypted_fs_alert_dialog_title" msgid="583462447886934755">"Upozornenie systémov EFS (Encrypted File System)."</string>
     <string name="emergency_tone_title" msgid="1055954530111587114">"Tiesňové vyzváňanie"</string>
     <string name="emergency_tone_summary" msgid="722259232924572153">"Nastaviť správanie pri tiesňovom volaní"</string>
     <string name="privacy_settings" msgid="9206631214140954954">"Ochrana osobných údajov"</string>
@@ -1159,4 +1165,8 @@
     <string name="sound_category_calls_title" msgid="3688531959256239012">"Prichádzajúce hovory"</string>
     <string name="sound_category_notification_title" msgid="3502115998790286943">"Upozornenia"</string>
     <string name="sound_category_feedback_title" msgid="4399742321363475393">"Spätná väzba"</string>
+    <string name="wimax_settings" msgid="1574837328738396794">"Nastavenia 4G"</string>
+    <string name="wimax_settings_summary" msgid="3207355006084135453">"Nastaviť a spravovať sieť 4G a modem"</string>
+    <string name="status_wimax_mac_address" msgid="8390791848661413416">"Adresa 4G MAC"</string>
+    <string name="additional_system_update_settings_list_item_title" msgid="214987609894661992">"Ďalšie aktualizácie systému"</string>
 </resources>

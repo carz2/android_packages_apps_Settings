@@ -27,7 +27,7 @@
     <item msgid="4439789052790868249">"아시아"</item>
     <item msgid="956915953069815961">"호주"</item>
     <item msgid="5345178126174698955">"태평양"</item>
-    <item msgid="8392017019801393511">"모두"</item>
+    <item msgid="8392017019801393511">"전체"</item>
   </string-array>
   <string-array name="animations_entries">
     <item msgid="207790005475613429">"애니메이션 없음"</item>
@@ -104,6 +104,12 @@
     <item msgid="7981731051382306293">"TLS"</item>
     <item msgid="2892994535305020162">"TTLS"</item>
   </string-array>
+  <string-array name="bluetooth_visibility_timeout_entries">
+    <item msgid="1106621950288502195">"2분"</item>
+    <item msgid="5780349442819375570">"5분"</item>
+    <item msgid="1166466894270177580">"1시간"</item>
+    <item msgid="9032073376232198148">"선택 안함"</item>
+  </string-array>
   <string-array name="wifi_signal">
     <item msgid="2245412278046491293">"나쁨"</item>
     <item msgid="5615082285463430971">"양호함"</item>
@@ -143,6 +149,9 @@
     <item msgid="535934025797984365">"CHAP"</item>
     <item msgid="8383098660619805783">"PAP 또는 CHAP"</item>
   </string-array>
+    <!-- no translation found for apn_protocol_entries:0 (4852355456199302715) -->
+    <!-- no translation found for apn_protocol_entries:1 (4394161344888484571) -->
+    <!-- no translation found for apn_protocol_entries:2 (8084938354605535381) -->
   <string-array name="app_install_location_entries">
     <item msgid="8151497958991952759">"내부 기기 저장용량"</item>
     <item msgid="3738430123799803530">"이동식 SD 카드"</item>
