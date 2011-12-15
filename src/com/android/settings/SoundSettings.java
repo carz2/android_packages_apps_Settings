@@ -75,6 +75,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_DOCK_AUDIO_SETTINGS = "dock_audio";
     private static final String KEY_DOCK_SOUNDS = "dock_sounds";
     private static final String KEY_DOCK_AUDIO_MEDIA_ENABLED = "dock_audio_media_enabled";
+    private static final String KEY_POWER_SOUNDS = "power_sounds";
 
     private static final String[] NEED_VOICE_CAPABILITY = {
             KEY_RINGTONE, KEY_DTMF_TONE, KEY_CATEGORY_CALLS,
@@ -94,6 +95,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private Preference mNotificationPreference;
 
     private Runnable mRingtoneLookupRunnable;
+    private CheckBoxPreference mPowerSounds;
 
     private AudioManager mAudioManager;
 
@@ -166,6 +168,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mLockSounds.setPersistent(false);
         mLockSounds.setChecked(Settings.System.getInt(resolver,
                 Settings.System.LOCKSCREEN_SOUNDS_ENABLED, 1) != 0);
+        mPowerSounds = (CheckBoxPreference) findPreference(KEY_POWER_SOUNDS);
+        mPowerSounds.setPersistent(false);
+        mPowerSounds.setChecked(Settings.System.getInt(resolver,
+                Settings.System.POWER_SOUNDS_ENABLED, 1) != 0);
 
         mRingtonePreference = findPreference(KEY_RINGTONE);
         mNotificationPreference = findPreference(KEY_NOTIFICATION_SOUND);
@@ -308,6 +314,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements
             int dockState = mDockIntent != null
                     ? mDockIntent.getIntExtra(Intent.EXTRA_DOCK_STATE, 0)
                     : Intent.EXTRA_DOCK_STATE_UNDOCKED;
+        } else if (preference == mPowerSounds) {
+            Settings.System.putInt(getContentResolver(), Settings.System.POWER_SOUNDS_ENABLED,
+                    mPowerSounds.isChecked() ? 1 : 0);
+        }
 
             if (dockState == Intent.EXTRA_DOCK_STATE_UNDOCKED) {
                 showDialog(DIALOG_NOT_DOCKED);
