@@ -62,6 +62,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_RINGTONE = "ringtone";
     private static final String KEY_NOTIFICATION_SOUND = "notification_sound";
     private static final String KEY_CATEGORY_CALLS = "category_calls_and_notification";
+    private static final String KEY_POWER_SOUNDS = "power_sounds";
 
     private static final String[] NEED_VOICE_CAPABILITY = {
             KEY_RINGTONE, KEY_DTMF_TONE, KEY_CATEGORY_CALLS,
@@ -81,6 +82,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private Preference mNotificationPreference;
 
     private Runnable mRingtoneLookupRunnable;
+    private CheckBoxPreference mPowerSounds;
 
     private AudioManager mAudioManager;
 
@@ -139,6 +141,10 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mLockSounds.setPersistent(false);
         mLockSounds.setChecked(Settings.System.getInt(resolver,
                 Settings.System.LOCKSCREEN_SOUNDS_ENABLED, 1) != 0);
+        mPowerSounds = (CheckBoxPreference) findPreference(KEY_POWER_SOUNDS);
+        mPowerSounds.setPersistent(false);
+        mPowerSounds.setChecked(Settings.System.getInt(resolver,
+                Settings.System.POWER_SOUNDS_ENABLED, 1) != 0);
 
         mRingtonePreference = findPreference(KEY_RINGTONE);
         mNotificationPreference = findPreference(KEY_NOTIFICATION_SOUND);
@@ -262,6 +268,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         } else if (preference == mMusicFx) {
             // let the framework fire off the intent
             return false;
+        } else if (preference == mPowerSounds) {
+            Settings.System.putInt(getContentResolver(), Settings.System.POWER_SOUNDS_ENABLED,
+                    mPowerSounds.isChecked() ? 1 : 0);
         }
 
         return true;
