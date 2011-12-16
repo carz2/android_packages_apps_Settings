@@ -26,6 +26,11 @@
             android:persistent="false"
             android:streamType="ring" />
 
+    <CheckBoxPreference
+            android:key="notification_volume_separate"
+            android:title="@string/checkbox_notification_same_as_incoming_call"
+            android:defaultValue="true" />
+
     <ListPreference
             android:key="vibrate"
             android:title="@string/vibrate_title"

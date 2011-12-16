@@ -69,6 +69,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_NOTIFICATION_SOUND = "notification_sound";
     private static final String KEY_CATEGORY_CALLS = "category_calls";
     private static final String KEY_POWER_SOUNDS = "power_sounds";
+    private static final String KEY_NOTIFICATION_VOLUME_SEPARATE = "notification_volume_separate";
 
     private static final String VALUE_VIBRATE_NEVER = "never";
     private static final String VALUE_VIBRATE_ALWAYS = "always";
@@ -103,6 +104,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
 
     private Runnable mRingtoneLookupRunnable;
     private CheckBoxPreference mPowerSounds;
+    private CheckBoxPreference mNotificationVolumeSeparate;
 
     private AudioManager mAudioManager;
 
@@ -170,10 +172,16 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         mLockSounds.setPersistent(false);
         mLockSounds.setChecked(Settings.System.getInt(resolver,
                 Settings.System.LOCKSCREEN_SOUNDS_ENABLED, 1) != 0);
+
         mPowerSounds = (CheckBoxPreference) findPreference(KEY_POWER_SOUNDS);
         mPowerSounds.setPersistent(false);
         mPowerSounds.setChecked(Settings.System.getInt(resolver,
                 Settings.System.POWER_SOUNDS_ENABLED, 1) != 0);
+
+        mNotificationVolumeSeparate = (CheckBoxPreference) findPreference(KEY_NOTIFICATION_VOLUME_SEPARATE);
+        mNotificationVolumeSeparate.setPersistent(false);
+        mNotificationVolumeSeparate.setChecked(Settings.System.getInt(resolver,
+                Settings.System.NOTIFICATIONS_USE_RING_VOLUME, 1) != 0);
 
         mRingtonePreference = findPreference(KEY_RINGTONE);
         mNotificationPreference = findPreference(KEY_NOTIFICATION_SOUND);
@@ -416,6 +424,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         } else if (preference == mPowerSounds) {
             Settings.System.putInt(getContentResolver(), Settings.System.POWER_SOUNDS_ENABLED,
                     mPowerSounds.isChecked() ? 1 : 0);
+        } else if (preference == mNotificationVolumeSeparate) {
+            Settings.System.putInt(getContentResolver(), Settings.System.NOTIFICATIONS_USE_RING_VOLUME,
+                    mNotificationVolumeSeparate.isChecked() ? 1 : 0);
         }
 
         return true;
