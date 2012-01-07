@@ -425,6 +425,21 @@
                 android:value="com.android.settings.Settings$InputMethodAndLanguageSettingsActivity" />
         </activity>
 
+        <receiver android:name=".CPUReceiver"
+		android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".CPUActivity"
+		android:label="@string/cpu_settings_title">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
         <activity android:name="Settings$SoundSettingsActivity"
                 android:label="@string/sound_settings"
                 android:clearTaskOnLaunch="true">
