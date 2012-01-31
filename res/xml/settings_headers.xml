@@ -60,6 +60,17 @@
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />
 
+    <!-- cpu settings -->
+    <header
+        android:id="@+id/cpu_settings"
+        android:title="@string/cpu_settings_title"
+	android:icon="@drawable/ic_settings_cpu">
+        <intent
+            android:action="com.android.settings.MAIN"
+            android:targetPackage="com.android.settings"
+            android:targetClass="com.android.settings.CPUActivity" />
+    </header>
+
     <!-- Sound -->
     <header
         android:id="@+id/sound_settings"
