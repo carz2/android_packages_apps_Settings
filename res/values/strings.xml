@@ -1490,6 +1490,9 @@
          Label on Wifi Configuration screen-->
     <string name="config_list_label" translatable="false">Configured networks</string>
 
+    <!-- Device specific settings -->
+    <string name="device_settings_title">Device options</string>
+
     <!-- CPU Settings strings -->
     <string name="cpu_settings_title">CPU Performance</string>
     <string name="cpu_summary">Governor and clock settings</string>

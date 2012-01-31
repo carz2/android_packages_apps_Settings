@@ -60,6 +60,17 @@
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />
 
+    <!-- Device Specific settings -->
+    <header
+        android:id="@+id/device_settings"
+        android:title="@string/device_settings_title"
+        android:icon="@drawable/ic_settings_device">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.settings.device"
+            android:targetClass="com.cyanogenmod.settings.device.DeviceSettings" />
+    </header>
+
     <!-- cpu settings -->
     <header
         android:id="@+id/cpu_settings"
