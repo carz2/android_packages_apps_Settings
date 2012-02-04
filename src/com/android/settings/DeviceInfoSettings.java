@@ -61,11 +61,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
     private static final String KEY_BASEBAND_VERSION = "baseband_version";
     private static final String KEY_FIRMWARE_VERSION = "firmware_version";
     private static final String KEY_MOD_VERSION = "mod_version";
-<<<<<<< HEAD
-=======
     private static final String KEY_MOD_BUILD_DATE = "build_date";
-
->>>>>>> edefbe6... Added build date (ro.build.date from build.prop) to device info.
     private static final String KEY_UPDATE_SETTING = "additional_system_update_settings";
 
     long[] mHits = new long[3];
