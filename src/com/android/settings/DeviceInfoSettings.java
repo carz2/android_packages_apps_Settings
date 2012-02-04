@@ -61,6 +61,11 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
     private static final String KEY_BASEBAND_VERSION = "baseband_version";
     private static final String KEY_FIRMWARE_VERSION = "firmware_version";
     private static final String KEY_MOD_VERSION = "mod_version";
+<<<<<<< HEAD
+=======
+    private static final String KEY_MOD_BUILD_DATE = "build_date";
+
+>>>>>>> edefbe6... Added build date (ro.build.date from build.prop) to device info.
     private static final String KEY_UPDATE_SETTING = "additional_system_update_settings";
 
     long[] mHits = new long[3];
@@ -90,6 +95,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
         setStringSummary(KEY_BUILD_NUMBER, Build.DISPLAY);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
         setValueSummary(KEY_MOD_VERSION, "ro.modversion");
+        setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
 
         // Remove Safety information preference if PROPERTY_URL_SAFETYLEGAL is not set
         removePreferenceIfPropertyMissing(getPreferenceScreen(), "safetylegal",
