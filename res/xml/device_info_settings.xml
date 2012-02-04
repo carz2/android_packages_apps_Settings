@@ -87,12 +87,13 @@
                 android:title="@string/contributors_title">
             <intent android:action="android.settings.TEAM" />
         </PreferenceScreen>
-        -->
+
         <PreferenceScreen android:key="system_tutorial"
                 android:title="@string/system_tutorial_list_item_title" 
                 android:summary="@string/system_tutorial_list_item_summary">
             <intent android:action="android.intent.action.SYSTEM_TUTORIAL" />
         </PreferenceScreen>
+        -->
 
         <!-- Device cpu info -->
         <Preference android:key="device_cpu"
