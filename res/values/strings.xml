@@ -1538,9 +1538,6 @@
     <!-- Sound settings screen, the caption of the checkbox for having the notification volume be
          the same as the incoming call volume. -->
     <string name="checkbox_notification_same_as_incoming_call">Notifications use Ringer Volume</string>
-    <!-- Sound settings screen, the summary of the checkbox for having the notification volume be
-         the same as the incoming call volume. -->
-    <string name="checkbox_notification_same_as_incoming_call_summary">Notifications use Ringer Volume if Checked</string>
     <!-- Sound settings screen, setting option title-->
     <string name="notification_sound_dialog_title">Choose notification ringtone</string>
     <!-- Sound settings screen, setting option name -->

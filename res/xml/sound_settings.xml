@@ -29,7 +29,6 @@
     <CheckBoxPreference
             android:key="notification_volume_separate"
             android:title="@string/checkbox_notification_same_as_incoming_call"
-            android:summary="@string/checkbox_notification_same_as_incoming_call_summary"
             android:defaultValue="true" />
 
     <ListPreference
