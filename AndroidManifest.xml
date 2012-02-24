@@ -540,13 +540,6 @@
                 android:value="com.android.settings.Settings$InputMethodAndLanguageSettingsActivity" />
         </activity-alias>
 
-        <activity android:name="com.cyanogenmod.settings.device.DeviceSettings"
-		android:label="@string/device_settings_title">
-            <intent-filter>
-                <action android:name="com.cyanogenmod.action.LAUNCH_DEVICE_SETTINGS" />
-            </intent-filter>
-        </activity>
-
         <receiver android:name=".CPUReceiver"
 		android:enabled="true">
             <intent-filter>
