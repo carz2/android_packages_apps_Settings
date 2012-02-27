@@ -56,9 +56,9 @@
         android:breadCrumbTitle="@string/wireless_networks_settings_title"
         android:fragment="com.android.settings.WirelessSettings"
         android:icon="@drawable/empty_icon" />
-
-    <!-- DEVICE -->
-    <header android:title="@string/header_category_device" />
+        
+    <!-- CRESPO -->
+    <header android:title="@string/header_category_crespo" />
 
     <!-- Device Specific settings -->
     <header
@@ -81,6 +81,16 @@
             android:targetPackage="com.android.settings"
             android:targetClass="com.android.settings.CPUActivity" />
     </header>
+
+    <!-- StatusBar -->
+    <header
+        android:id="@+id/status_bar"
+        android:icon="@drawable/ic_settings_battery"
+        android:fragment="com.android.settings.StatusBarSettings"
+        android:title="@string/status_bar_title" />
+        
+    <!-- DEVICE -->
+    <header android:title="@string/header_category_device" />
 
     <!-- Sound -->
     <header
