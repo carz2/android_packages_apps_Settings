@@ -75,7 +75,7 @@
     <header
         android:id="@+id/cpu_settings"
         android:title="@string/cpu_settings_title"
-	android:icon="@drawable/ic_settings_cpu">
+        android:icon="@drawable/ic_settings_cpu">
         <intent
             android:action="com.android.settings.MAIN"
             android:targetPackage="com.android.settings"

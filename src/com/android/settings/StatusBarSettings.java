@@ -111,7 +111,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         return false;
     }
 
-    @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         boolean value;
 
