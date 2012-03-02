@@ -36,7 +36,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
 
-    private static final String STATUS_BAR_CM_SIGNAL = "status_bar_cm_signal";
+    private static final String STATUS_BAR_SIGNAL = "status_bar_signal";
 
     private ListPreference mStatusBarAmPm;
 
@@ -60,7 +60,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mStatusBarBrightnessControl = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_BRIGHTNESS_CONTROL);
         mStatusBarAmPm = (ListPreference) prefSet.findPreference(STATUS_BAR_AM_PM);
         mStatusBarBattery = (ListPreference) prefSet.findPreference(STATUS_BAR_BATTERY);
-        mStatusBarCmSignal = (ListPreference) prefSet.findPreference(STATUS_BAR_CM_SIGNAL);
+        mStatusBarCmSignal = (ListPreference) prefSet.findPreference(STATUS_BAR_SIGNAL);
 
 
         mStatusBarClock.setChecked((Settings.System.getInt(getActivity().getApplicationContext()
@@ -89,7 +89,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mStatusBarBattery.setOnPreferenceChangeListener(this);
 
         int signalStyle = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
-        		Settings.System.STATUS_BAR_CM_SIGNAL_TEXT, 0);
+        		Settings.System.STATUS_BAR_SIGNAL_TEXT, 0);
         mStatusBarCmSignal.setValue(String.valueOf(signalStyle));
         mStatusBarCmSignal.setOnPreferenceChangeListener(this);
     }
@@ -105,7 +105,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             return true;
         } else if (preference == mStatusBarCmSignal) {
             int signalStyle = Integer.valueOf((String) newValue);
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(), Settings.System.STATUS_BAR_CM_SIGNAL_TEXT, signalStyle);
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(), Settings.System.STATUS_BAR_SIGNAL_TEXT, signalStyle);
             return true;
         }
         return false;
