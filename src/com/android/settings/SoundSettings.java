@@ -69,6 +69,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private static final String KEY_NOTIFICATION_SOUND = "notification_sound";
     private static final String KEY_CATEGORY_CALLS = "category_calls";
     private static final String KEY_POWER_SOUNDS = "power_sounds";
+    private static final String KEY_QUIET_HOURS = "quiet_hours";
 
     private static final String SILENT_MODE_OFF = "off";
     private static final String SILENT_MODE_VIBRATE = "vibrate";
@@ -91,6 +92,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mLockSounds;
     private Preference mRingtonePreference;
     private Preference mNotificationPreference;
+    private PreferenceScreen mQuietHours;
 
     private Runnable mRingtoneLookupRunnable;
     private CheckBoxPreference mPowerSounds;
@@ -143,6 +145,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         } else {
             mSilentMode.setOnPreferenceChangeListener(this);
         }
+
+        mQuietHours = (PreferenceScreen) findPreference(KEY_QUIET_HOURS);
 
         mVibrateOnRing = (CheckBoxPreference) findPreference(KEY_VIBRATE);
         mVibrateOnRing.setOnPreferenceChangeListener(this);
@@ -344,9 +348,14 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         } else if (preference == mMusicFx) {
             // let the framework fire off the intent
             return false;
+
         } else if (preference == mPowerSounds) {
             Settings.System.putInt(getContentResolver(), Settings.System.POWER_SOUNDS_ENABLED,
                     mPowerSounds.isChecked() ? 1 : 0);
+
+        } else {
+            // If we didn't handle it, let preferences handle it.
+            return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
 
         return true;

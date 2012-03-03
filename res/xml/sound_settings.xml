@@ -32,6 +32,13 @@
             android:entries="@array/silent_mode_entries"
             android:entryValues="@array/silent_mode_values" />
 
+    <!-- Quiet hours -->
+    <PreferenceScreen
+            android:key="quiet_hours"
+            android:fragment="com.android.settings.QuietHours"
+            android:title="@string/quiet_hours_title"
+            android:summary="@string/quiet_hours_summary" />
+
     <Preference
             android:key="musicfx"
             android:title="@string/musicfx_title">
