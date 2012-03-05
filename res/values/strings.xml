@@ -1551,6 +1551,11 @@
     <string name="quiet_hours_haptic_on">Haptic feedback will be disabled</string>
     <string name="quiet_hours_haptic_off">Haptic feedback will function as normal</string>
 
+    <!-- Electron Beam -->
+    <string name="display_category_animation_options_title">Animation</string>
+    <string name="display_electron_beam_animation_on_title">Screen-on animation</string>
+    <string name="display_electron_beam_animation_off_title">Screen-off animation</string>
+
     <!-- Sound and alerts settings -->
     <skip/>
     <!-- Main Settings screen setting option name to go into the display settings screen -->

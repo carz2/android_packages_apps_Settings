@@ -53,4 +53,18 @@
             android:title="@string/notification_pulse_title"
             android:persistent="false" />
 
+        <PreferenceCategory
+            android:key="category_animation_options"
+            android:title="@string/display_category_animation_options_title"/>
+
+        <CheckBoxPreference
+            android:key="electron_beam_animation_on"
+            android:title="@string/display_electron_beam_animation_on_title"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="electron_beam_animation_off"
+            android:title="@string/display_electron_beam_animation_off_title"
+            android:defaultValue="true" />
+
 </PreferenceScreen>
