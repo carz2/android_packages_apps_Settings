@@ -54,8 +54,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_NOTIFICATION_PULSE = "notification_pulse";
-    private static final String KEY_DISPLAY_ROTATION = "display_rotation";
 
+    private static final String KEY_ELECTRON_BEAM_ANIMATION_ON = "electron_beam_animation_on";
+    private static final String KEY_ELECTRON_BEAM_ANIMATION_OFF = "electron_beam_animation_off";
+
+    private static final String KEY_DISPLAY_ROTATION = "display_rotation";
     private static final String ROTATION_ANGLE_0 = "0";
     private static final String ROTATION_ANGLE_90 = "90";
     private static final String ROTATION_ANGLE_180 = "180";
@@ -66,7 +69,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private ListPreference mFontSizePref;
 
     private CheckBoxPreference mNotificationPulse;
-
+    private CheckBoxPreference mElectronBeamAnimationOn;
+    private CheckBoxPreference mElectronBeamAnimationOff;
 
     private final Configuration mCurConfig = new Configuration();
 
@@ -113,6 +117,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 Log.e(TAG, Settings.System.NOTIFICATION_LIGHT_PULSE + " not found");
             }
         }
+
+        mElectronBeamAnimationOn = (CheckBoxPreference) findPreference(KEY_ELECTRON_BEAM_ANIMATION_ON);
+        mElectronBeamAnimationOff = (CheckBoxPreference) findPreference(KEY_ELECTRON_BEAM_ANIMATION_OFF);
+        mElectronBeamAnimationOn.setChecked(Settings.System.getInt(resolver,
+                Settings.System.ELECTRON_BEAM_ANIMATION_ON, 0) == 1);
+        mElectronBeamAnimationOff.setChecked(Settings.System.getInt(resolver,
+                Settings.System.ELECTRON_BEAM_ANIMATION_OFF, 1) == 1);
+
     }
 
     private void updateDisplayRotationPreferenceDescription() {
@@ -277,6 +289,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             Settings.System.putInt(getContentResolver(), Settings.System.NOTIFICATION_LIGHT_PULSE,
                     value ? 1 : 0);
             return true;
+        } else if (preference == mElectronBeamAnimationOn) {
+            Settings.System.putInt(getContentResolver(), Settings.System.ELECTRON_BEAM_ANIMATION_ON,
+                    mElectronBeamAnimationOn.isChecked() ? 1 : 0);
+            return true;
+        } else if (preference == mElectronBeamAnimationOff) {
+            Settings.System.putInt(getContentResolver(), Settings.System.ELECTRON_BEAM_ANIMATION_OFF,
+                    mElectronBeamAnimationOff.isChecked() ? 1 : 0);
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
