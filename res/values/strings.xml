@@ -1492,6 +1492,8 @@
          Label on Wifi Configuration screen-->
     <string name="config_list_label" translatable="false">Configured networks</string>
 
+    <!--#carz -->
+
     <!-- Device specific settings -->
     <string name="device_settings_title">Nexus S Settings</string>
 
@@ -1555,6 +1557,19 @@
     <string name="display_category_animation_options_title">Animation</string>
     <string name="display_electron_beam_animation_on_title">Screen-on animation</string>
     <string name="display_electron_beam_animation_off_title">Screen-off animation</string>
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="display_rotation_enabled">Enabled.</string>
+    <string name="display_rotation_disabled">Disabled.</string>
+    <string name="display_rotation_unit">degrees</string>
+    <string name="display_rotation_category_title">Rotation modes</string>
+    <string name="display_rotation_0_title">0 degrees</string>
+    <string name="display_rotation_90_title">90 degrees</string>
+    <string name="display_rotation_180_title">180 degrees</string>
+    <string name="display_rotation_270_title">270 degrees</string>
+
+    <!--end #carz -->
 
     <!-- Sound and alerts settings -->
     <skip/>
