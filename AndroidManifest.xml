@@ -1451,7 +1451,9 @@
 
         <activity android:name=".LightLevelsActivity" />
 
-        
+        <activity android:name=".LockscreenTargets" />
+
+        <activity android:name=".LockscreenInterface" />
 
         <!-- Pseudo-activity used to provide an intent-filter entry point to encryption settings -->
         <activity android:name="Settings$CryptKeeperSettingsActivity"
