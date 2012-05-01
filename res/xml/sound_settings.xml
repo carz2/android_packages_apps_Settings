@@ -42,8 +42,8 @@
     <Preference
             android:key="musicfx"
             android:title="@string/musicfx_title">
-        <intent android:targetPackage="com.android.musicfx"
-                android:targetClass="com.android.musicfx.ControlPanelPicker" />
+        <intent android:targetPackage="com.bel.android.dspmanager"
+                android:targetClass="com.bel.android.dspmanager.activity.DSPManager" />
     </Preference>
 
     <PreferenceCategory
