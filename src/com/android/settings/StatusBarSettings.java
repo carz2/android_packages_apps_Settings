@@ -67,7 +67,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
                 .getContentResolver(),
         		Settings.System.STATUS_BAR_CLOCK, 1) == 1));
         mStatusBarBrightnessControl.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
-        		Settings.System.STATUS_BAR_BRIGHTNESS_TOGGLE, 0) == 1));
+        		Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, 0) == 1));
 
         try {
             if (Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(), 
@@ -120,7 +120,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
             return true;
         } else if (preference == mStatusBarBrightnessControl) {
             value = mStatusBarBrightnessControl.isChecked();
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(), Settings.System.STATUS_BAR_BRIGHTNESS_TOGGLE, value ? 1 : 0);
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(), Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, value ? 1 : 0);
             return true;
         }
         return false;
