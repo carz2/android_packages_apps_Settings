@@ -1552,6 +1552,9 @@
     <!-- Device specific settings -->
     <string name="device_settings_title">Nexus S Settings</string>
 
+    <!-- Themes settings -->
+    <string name="themes_settings_title">Themes</string>
+
     <!-- CPU Settings strings -->
     <string name="cpu_settings_title">CPU Performance</string>
     <string name="cpu_summary">Governor and clock settings</string>
