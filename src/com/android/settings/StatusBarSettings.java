@@ -38,6 +38,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     private static final String STATUS_BAR_SIGNAL = "status_bar_signal";
 
+    private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
+
     private ListPreference mStatusBarAmPm;
 
     private ListPreference mStatusBarBattery;
@@ -47,6 +49,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
     private CheckBoxPreference mStatusBarClock;
 
     private CheckBoxPreference mStatusBarBrightnessControl;
+
+    private CheckBoxPreference mStatusBarNotifCount;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -79,19 +83,23 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         }
 
         int statusBarAmPm = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
-        		Settings.System.STATUS_BAR_AM_PM, 2);
+        	Settings.System.STATUS_BAR_AM_PM, 2);
         mStatusBarAmPm.setValue(String.valueOf(statusBarAmPm));
         mStatusBarAmPm.setOnPreferenceChangeListener(this);
 
         int statusBarBattery = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
-        		Settings.System.STATUS_BAR_BATTERY, 0);
+        	Settings.System.STATUS_BAR_BATTERY, 0);
         mStatusBarBattery.setValue(String.valueOf(statusBarBattery));
         mStatusBarBattery.setOnPreferenceChangeListener(this);
 
         int signalStyle = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
-        		Settings.System.STATUS_BAR_SIGNAL_TEXT, 0);
+        	Settings.System.STATUS_BAR_SIGNAL_TEXT, 0);
         mStatusBarCmSignal.setValue(String.valueOf(signalStyle));
         mStatusBarCmSignal.setOnPreferenceChangeListener(this);
+
+        mStatusBarNotifCount = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_NOTIF_COUNT);
+        mStatusBarNotifCount.setChecked((Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.STATUS_BAR_NOTIF_COUNT, 0) == 1));
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
@@ -121,6 +129,11 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         } else if (preference == mStatusBarBrightnessControl) {
             value = mStatusBarBrightnessControl.isChecked();
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(), Settings.System.STATUS_BAR_BRIGHTNESS_CONTROL, value ? 1 : 0);
+            return true;
+        } else if (preference == mStatusBarNotifCount) {
+            value = mStatusBarNotifCount.isChecked();
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.STATUS_BAR_NOTIF_COUNT, value ? 1 : 0);
             return true;
         }
         return false;
