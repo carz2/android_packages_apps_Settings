@@ -1549,6 +1549,14 @@
 
     <!--#Carz2 -->
 
+    <!-- Wifi sleep timeout -->
+    <string name="wifi_idle_mn_title">Wi-Fi idle timeout</string>
+    <string name="wifi_idle_5mn">5 minutes</string>
+    <string name="wifi_idle_15mn">15 minutes (default)</string>
+    <string name="wifi_idle_30mn">30 minutes</string>
+    <string name="wifi_idle_1h">1 hour</string>
+    <string name="wifi_idle_3h">3 hours</string>
+
     <!-- Device specific settings -->
     <string name="device_settings_title">Nexus S Settings</string>
 
@@ -1627,7 +1635,7 @@
     <string name="display_rotation_180_title">180 degrees</string>
     <string name="display_rotation_270_title">270 degrees</string>
 
-<!-- Backlight  -->
+    <!-- Backlight  -->
     <string name="backlight_title">Automatic backlight</string>
     <string name="backlight_summary">Tweak levels and filtering</string>
     <string name="light_filter_title">Light sensor filter</string>
@@ -1670,7 +1678,7 @@
     <!-- Hostname setting -->
     <string name="device_hostname">Device hostname</string>
 
-   <!-- Status bar notification count -->
+    <!-- Status bar notification count -->
     <string name="status_bar_notif_count_title">Show notification count</string>
     <string name="status_bar_notif_count_summary">Display number of pending notifications on the status bar</string>
 
@@ -1724,71 +1732,6 @@
 
     <string name="ok">OK</string>
 
-    <!-- Profiles settings  -->
-    <string name="profiles_settings_title">Profiles</string>
-    <string name="profiles_general_title">General</string>
-    <string name="profiles_add">Add</string>
-    <string name="profile_menu_delete">Delete</string>
-    <string name="profile_settings_title">Profile</string>
-    <string name="profile_empty_list_profiles_off">To configure and use System profiles, turn Profiles on.</string>
-
-    <!-- Add Profile -->
-    <string name="add_profile_dialog_title">Create new profile</string>
-    <string name="profile_name_title">Name</string>
-    <string name="profile_profile_name_prompt">Enter a name for the new profile</string>
-    <string name="menu_new_profile">New profile</string>
-    <string name="menu_new_profile_summary">Add and configure a new profile</string>
-    <string name="new_profile_name">&lt;new profile&gt;</string>
-
-    <!-- Rename Dialog  -->
-    <string name="rename_dialog_title">Rename</string>
-    <string name="rename_dialog_message">Enter a new name</string>
-    <string name="duplicate_profile_name">Duplicate profile name!</string>
-    <string name="duplicate_appgroup_name">Duplicate application group name!</string>
-
-    <!-- Reset Profiles -->
-    <string name="profile_reset_title">Reset</string>
-    <string name="profile_reset_message">Delete all user created profiles and application groups and restore them to default?</string>
-
-    <!-- Delete confimation messages -->
-    <string name="profile_delete_confirm">Delete this profile?</string>
-    <string name="profile_app_delete_confirm">Remove this application?</string>
-    <string name="profile_cannot_delete">An active profile cannot be deleted</string>
-
-    <!-- Profile Config screen PreferenceGroup titles -->
-    <string name="profile_connectionoverrides_title">Connection overrides</string>
-    <string name="profile_volumeoverrides_title">Volume overrides</string>
-    <string name="profile_vibratoroverrides_title">Vibrator overrides</string>
-    <string name="connection_state_disabled">Disable</string>
-    <string name="connection_state_enabled">Enable</string>
-    <string name="volume_override_summary">Set to</string>
-    <string name="vibrator_state_disabled">Disable</string>
-    <string name="vibrator_state_enabled">Enable</string>
-    <string name="vibrator_state_silent">Only when silent</string>
-
-    <!-- Menu item for managing profiles -->
-    <string name="profile_profiles_manage">Profiles</string>
-    <string name="profile_profile_manage">Manage profile</string>
-    <string name="profile_applist_manage">Application list</string>
-    <string name="profile_appgroups_manage">Application groups</string>
-    <string name="profile_appgroup_manage">Manage application group</string>
-
-    <!-- Profile settings screen, section header for settings related to notification profiles -->
-    <string name="profile_settings">Profile settings</string>
-    <string name="profile_name">Name</string>
-
-    <!-- Profile Settings sound modes labels -->
-    <string name="sound_mode">Notification mode</string>
-    <string name="ringer_mode">Ring mode</string>
-    <string name="lights_mode">Lights mode</string>
-    <string name="vibrate_mode">Vibrate mode</string>
-    <string name="choose_soundtone">Choose notification tone</string>
-    <string name="choose_ringtone">Choose ringtone</string>
-
-    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
-    <string name="soundtone_title">Notification tone</string>
-    <string name="soundtone_summary">""</string>
-
     <!-- Title for application group setting screen -->
     <string name="profile_appgroups_title">Application groups</string>
     <string name="profile_applist_title">Applications</string>
@@ -1798,28 +1741,8 @@
     <string name="profile_appgroup_name_title">Name</string>
     <string name="profile_add_app">Add application</string>
     <string name="profile_delete_app">Remove application</string>
-
-    <!-- Add application dialog box title -->
-    <string name="profile_choose_app">Choose application</string>
-    <string name="profile_settings_header">Profile settings</string>
-
-    <!-- Profiles - system settings -->
-    <string name="profile_system_settings_title">System settings</string>
-    <string name="profile_lockmode_title">Lock screen mode</string>
-    <string name="profile_lockmode_default">Default</string>
-    <string name="profile_lockmode_insecure">Insecure</string>
-    <string name="profile_lockmode_disabled">Disabled</string>
-    <string name="profile_lockmode_default_summary">Use system default</string>
-    <string name="profile_lockmode_insecure_summary">Use insecure lock screen</string>
-    <string name="profile_lockmode_disabled_summary">Lock screen is disabled</string>
-    <string name="profile_airplanemode_title">Airplane mode</string>
-    <string name="profile_airplanemode_default">Default</string>
-    <string name="profile_airplanemode_enabled">Enabled</string>
-    <string name="profile_airplanemode_disabled">Disabled</string>
-    <string name="profile_airplanemode_default_summary">Use system default</string>
-    <string name="profile_airplanemode_enabled_summary">Airplane mode is enabled</string>
-    <string name="profile_airplanemode_disabled_summary">Airplane mode is disabled</string>
-    <string name="profile_disable_screen_lock_summary">Disable lock screen security while this profile is active</string>
+    <string name="profile_reset_title">Reset</string>
+    <string name="profile_reset_message">Delete all user created profiles and application groups and restore them to default?</string>
 
     <!--end #Carz2 -->
 
