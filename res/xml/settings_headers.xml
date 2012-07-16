@@ -57,8 +57,8 @@
         android:fragment="com.android.settings.WirelessSettings"
         android:icon="@drawable/empty_icon" />
 
-    <!-- DEVICE -->
-    <header android:title="@string/header_category_device" />
+    <!-- CRESPO -->
+    <header android:title="@string/header_category_crespo" />
 
     <!-- Device Specific settings -->
     <header
@@ -81,6 +81,9 @@
             android:targetPackage="com.android.settings"
             android:targetClass="com.android.settings.CPUActivity" />
     </header>
+
+    <!-- DEVICE -->
+    <header android:title="@string/header_category_device" />
 
     <!-- Sound -->
     <header
