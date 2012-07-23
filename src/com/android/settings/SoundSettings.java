@@ -323,11 +323,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                     ? mDockIntent.getIntExtra(Intent.EXTRA_DOCK_STATE, 0)
                     : Intent.EXTRA_DOCK_STATE_UNDOCKED;
 
-        } else {
-            // If we didn't handle it, let preferences handle it.
-            return super.onPreferenceTreeClick(preferenceScreen, preference);
-        }
-
             if (dockState == Intent.EXTRA_DOCK_STATE_UNDOCKED) {
                 showDialog(DIALOG_NOT_DOCKED);
             } else {
@@ -353,6 +348,9 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         } else if (preference == mDockAudioMediaEnabled) {
             Settings.Global.putInt(getContentResolver(), Settings.Global.DOCK_AUDIO_MEDIA_ENABLED,
                     mDockAudioMediaEnabled.isChecked() ? 1 : 0);
+        } else {
+            // If we didn't handle it, let preferences handle it.
+            return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
         return true;
     }

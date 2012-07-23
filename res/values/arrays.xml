@@ -745,6 +745,22 @@
         <item>Unsuccessful</item>
     </string-array>
 
+<!--Carz -->
+
+    <!-- Silent mode options. -->
+    <string-array name="silent_mode_entries">
+        <item>Off</item>
+        <item>Vibrate</item>
+        <item>Mute</item>
+    </string-array>
+
+    <!-- Values for Silent mode. Do not translate. -->
+    <string-array name="silent_mode_values" translatable="false">
+        <item>off</item>
+        <item>vibrate</item>
+        <item>mute</item>
+    </string-array>
+
     <!--Status Bar Settings -->
     <string-array name="entries_status_bar_am_pm">
         <item>Normal</item>
@@ -781,6 +797,8 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+
+<!--end carz -->
 
     <!-- User content ratings for restricted users [CHAR LIMIT=30] -->
     <string-array name="user_content_ratings_entries" translatable="false">
