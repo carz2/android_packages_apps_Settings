@@ -1547,6 +1547,8 @@
          Label on Wifi Configuration screen-->
     <string name="config_list_label" translatable="false">Configured networks</string>
 
+    <!--#Carz2 -->
+
     <!-- Device specific settings -->
     <string name="device_settings_title">Nexus S Settings</string>
 
@@ -1605,6 +1607,26 @@
     <string name="status_bar_signal_text_show_bars">Icon (default)</string>
     <string name="status_bar_signal_text_show_text">Text</string>
     <string name="status_bar_signal_text_hidden">Hidden</string>
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Rotation</string>
+    <string name="display_rotation_enabled">Enabled.</string>
+    <string name="display_rotation_disabled">Disabled.</string>
+    <string name="display_rotation_unit">degrees</string>
+    <string name="display_rotation_category_title">Rotation modes</string>
+    <string name="display_rotation_0_title">0 degrees</string>
+    <string name="display_rotation_90_title">90 degrees</string>
+    <string name="display_rotation_180_title">180 degrees</string>
+    <string name="display_rotation_270_title">270 degrees</string>
+
+    <!-- Hostname setting -->
+    <string name="device_hostname">Device hostname</string>
+
+   <!-- Status bar notification count -->
+    <string name="status_bar_notif_count_title">Show notification count</string>
+    <string name="status_bar_notif_count_summary">Display number of pending notifications on the status bar</string>
+
+    <!--end #Carz2 -->
 
     <!-- Sound and alerts settings -->
     <skip/>
@@ -4186,14 +4208,5 @@
     <string name="cell_broadcast_settings">Cell broadcasts</string>
     <!-- Cell Broadcast settings description [CHAR LIMIT=100] -->
     <string name="cell_broadcast_settings_summary">Select the types of emergency alerts to display.</string>
-
-    <!-- **** CARZ CRESPO PARTS **** -->
-
-    <!-- Hostname setting -->
-    <string name="device_hostname">Device hostname</string>
-
-   <!-- Status bar notification count -->
-    <string name="status_bar_notif_count_title">Show notification count</string>
-    <string name="status_bar_notif_count_summary">Display number of pending notifications on the status bar</string>
 
 </resources>
