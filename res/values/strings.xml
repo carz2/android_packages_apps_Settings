@@ -4571,6 +4571,11 @@
     <string name="icon_picker_sms">Messaging</string>
     <string name="icon_picker_twitter">Twitter</string>
 
+    <!-- Lock screen misc. settings -->
+    <string name="lockscreen_battery_status_title">Battery status</string>
+    <string name="lockscreen_battery_status_charging">Only when charging</string>
+    <string name="lockscreen_battery_status_alwayson">Always on</string>
+
     <!-- String for IconPicker -->
     <string name="icon_picker_title">Choose icon source</string>
     <string name="icon_picker_system_icons_title">System icons</string>
