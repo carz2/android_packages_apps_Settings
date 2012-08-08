@@ -170,7 +170,7 @@
         <item>Very fast</item>
     </string-array>
     <!-- Do not translate. -->
-    <string-array name="tts_rate_values">
+    <string-array name="tts_rate_values" translatable="false">
         <item>60</item>
         <item>80</item>
         <item>100</item>
@@ -187,7 +187,7 @@
         <item>Very high</item>
     </string-array>
     <!-- Do not translate. -->
-    <string-array name="tts_pitch_values">
+    <string-array name="tts_pitch_values" translatable="false">
         <item>50</item>
         <item>80</item>
         <item>100</item>
@@ -274,7 +274,7 @@
 
     <!-- Match this with the constants in AccessPoint. --> <skip />
     <!-- Wi-Fi security choices used when manually added a Wi-Fi network -->
-    <string-array name="wifi_security">
+    <string-array name="wifi_security" translatable="false">
         <!-- The Wi-Fi network does not have any security. -->
         <item>@string/wifi_security_none</item>
         <!-- Do not translate. -->
@@ -287,7 +287,7 @@
 
     <!-- Match this with the constants in AccessPoint. --> <skip />
     <!-- Wi-Fi security types for New User Dialog. EAP is not configurable. -->
-    <string-array name="wifi_security_no_eap">
+    <string-array name="wifi_security_no_eap" translatable="false">
         <!-- The Wi-Fi network does not have any security. -->
         <item>@string/wifi_security_none</item>
         <!-- Do not translate. -->
@@ -308,7 +308,7 @@
 
     <!-- Match this with the constants in WifiDialog. --> <skip />
     <!-- Wi-Fi settings.  The type of EAP method a Wi-Fi network has. -->
-    <string-array name="wifi_eap_method">
+    <string-array name="wifi_eap_method" translatable="false">
         <!-- Do not translate. -->
         <item>PEAP</item>
         <!-- Do not translate. -->
@@ -342,6 +342,14 @@
 
 
     <!-- Bluetooth Settings -->
+
+    <string-array name="location_entries_gps_source">
+        <item>Use Internal GPS</item>
+    </string-array>
+
+    <string-array name="location_values_gps_source" translatable="false">
+        <item>0</item>
+    </string-array>
 
     <!-- Discoverable mode timeout options -->
     <string-array name="bluetooth_visibility_timeout_entries">
@@ -383,7 +391,7 @@
 
     <!-- Match with wifi_sleep_policy_entries and the values of the settings in Settings class. --> <skip />
     <!-- Do not translate. -->
-    <string-array name="wifi_sleep_policy_values">
+    <string-array name="wifi_sleep_policy_values" translatable="false">
         <!-- Do not translate. -->
         <item>2</item>
         <!-- Do not translate. -->
@@ -404,7 +412,7 @@
 
     <!-- Match with wifi_frequency_band_entries and the values of the settings in WifiManager. -->
     <!-- Do not translate. -->
-    <string-array name="wifi_frequency_band_values">
+    <string-array name="wifi_frequency_band_values" translatable="false">
         <!-- Do not translate. -->
         <item>0</item>
         <!-- Do not translate. -->
@@ -464,7 +472,7 @@
     </string-array>
 
     <!-- Do not translate. -->
-    <string-array name="emergency_tone_values">
+    <string-array name="emergency_tone_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -491,7 +499,7 @@
         <item>PAP or CHAP</item>
     </string-array>
 
-    <string-array translatable="false" name="apn_auth_values">
+    <string-array name="apn_auth_values" translatable="false">
         <!-- Do not translate. -->
         <item>0</item>
         <!-- Do not translate. -->
@@ -509,7 +517,7 @@
         <item>IPv4/IPv6</item>
     </string-array>
 
-    <string-array translatable="false" name="apn_protocol_values">
+    <string-array name="apn_protocol_values" translatable="false">
         <!-- Do not translate. -->
         <item>IP</item>
         <!-- Do not translate. -->
@@ -525,7 +533,7 @@
         <item>Unspecified</item>
     </string-array>
 
-    <string-array translatable="false" name="bearer_values">
+    <string-array name="bearer_values" translatable="false">
         <!-- Do not translate. -->
         <item>14</item>
         <!-- Do not translate. -->
