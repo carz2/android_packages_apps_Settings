@@ -52,6 +52,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     /** If there is no setting in the provider, use this. */
     private static final int FALLBACK_SCREEN_TIMEOUT_VALUE = 30000;
 
+    private static final String KEY_AUTOMATIC_BACKLIGHT = "backlight_widget";
     private static final String KEY_SCREEN_TIMEOUT = "screen_timeout";
     private static final String KEY_FONT_SIZE = "font_size";
     private static final String KEY_NOTIFICATION_PULSE = "notification_pulse";
@@ -74,6 +75,8 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private ListPreference mScreenTimeoutPreference;
 
     private Preference mScreenSaverPreference;
+
+    private PreferenceScreen mAutomaticBacklightPreference;
 
     private PreferenceScreen mDisplayRotationPreference;
 
@@ -111,6 +114,14 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
 
         mFontSizePref = (ListPreference) findPreference(KEY_FONT_SIZE);
         mFontSizePref.setOnPreferenceChangeListener(this);
+
+        mAutomaticBacklightPreference = (PreferenceScreen) findPreference(KEY_AUTOMATIC_BACKLIGHT);
+        if (mAutomaticBacklightPreference != null
+                && !getResources().getBoolean(
+                        com.android.internal.R.bool.config_automatic_brightness_available)) {
+            getPreferenceScreen().removePreference(mAutomaticBacklightPreference);
+        }
+
         mNotificationPulse = (CheckBoxPreference) findPreference(KEY_NOTIFICATION_PULSE);
         if (mNotificationPulse != null
                 && getResources().getBoolean(
@@ -125,7 +136,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 Log.e(TAG, Settings.System.NOTIFICATION_LIGHT_PULSE + " not found");
             }
         }
-
     }
 
     private void updateDisplayRotationPreferenceDescription() {
