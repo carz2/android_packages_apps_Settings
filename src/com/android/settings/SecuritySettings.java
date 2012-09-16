@@ -80,6 +80,8 @@ public class SecuritySettings extends SettingsPreferenceFragment
     private static final String KEY_CREDENTIALS_MANAGER = "credentials_management";
     private static final String PACKAGE_MIME_TYPE = "application/vnd.android.package-archive";
 
+    private static final String KEY_SMS_SECURITY_CHECK_PREF = "sms_security_check_limit";
+
     DevicePolicyManager mDPM;
 
     private ChooseLockSettingsHelper mChooseLockSettingsHelper;
@@ -100,6 +102,8 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
     private boolean mIsPrimary;
 
+    private ListPreference mSmsSecurityCheck;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -118,6 +122,9 @@ public class SecuritySettings extends SettingsPreferenceFragment
         }
         addPreferencesFromResource(R.xml.security_settings);
         root = getPreferenceScreen();
+
+        // Add package manager to check if features are available
+        PackageManager pm = getPackageManager();
 
         // Add options for lock/unlock screen
         int resid = 0;
@@ -259,6 +266,15 @@ public class SecuritySettings extends SettingsPreferenceFragment
             }
         }
 
+        boolean isTelephony = pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
+        if (isTelephony) {
+            addPreferencesFromResource(R.xml.security_settings_app_mms);
+            mSmsSecurityCheck = (ListPreference) root.findPreference(KEY_SMS_SECURITY_CHECK_PREF);
+            mSmsSecurityCheck.setOnPreferenceChangeListener(this);
+            int smsSecurityCheck = Integer.valueOf(mSmsSecurityCheck.getValue());
+            updateSmsSecuritySummary(smsSecurityCheck);
+         }
+
         return root;
     }
 
@@ -318,6 +334,11 @@ public class SecuritySettings extends SettingsPreferenceFragment
         if (mWarnInstallApps != null) {
             mWarnInstallApps.dismiss();
         }
+    }
+
+    private void updateSmsSecuritySummary(int i) {
+        String message = getString(R.string.sms_security_check_limit_summary, i);
+        mSmsSecurityCheck.setSummary(message);
     }
 
     private void setupLockAfterPreference() {
@@ -515,6 +536,11 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 Log.e("SecuritySettings", "could not persist lockAfter timeout setting", e);
             }
             updateLockAfterPreferenceSummary();
+        } else if (preference == mSmsSecurityCheck) {
+            int smsSecurityCheck = Integer.valueOf((String) value);
+            Settings.Secure.putInt(getContentResolver(), Settings.Global.SMS_OUTGOING_CHECK_MAX_COUNT,
+                     smsSecurityCheck);
+            updateSmsSecuritySummary(smsSecurityCheck);
         }
         return true;
     }
