@@ -66,6 +66,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
     private static final String KEY_MOD_VERSION = "mod_version";
     private static final String KEY_MOD_BUILD_DATE = "build_date";
 
+
     long[] mHits = new long[3];
 
     @Override
