@@ -59,6 +59,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_SCREEN_SAVER = "screensaver";
 
     private static final String KEY_DISPLAY_ROTATION = "display_rotation";
+    private static final String KEY_LOCKSCREEN_ROTATION = "lockscreen_rotation";
 
     private static final String ROTATION_ANGLE_0 = "0";
     private static final String ROTATION_ANGLE_90 = "90";
@@ -67,8 +68,10 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String ROTATION_ANGLE_DELIM = ", ";
     private static final String ROTATION_ANGLE_DELIM_FINAL = " & ";
 
-    private ListPreference mFontSizePref;
+    private CheckBoxPreference mLockScreenRotation;
     private CheckBoxPreference mNotificationPulse;
+
+    private ListPreference mFontSizePref;
 
     private final Configuration mCurConfig = new Configuration();
 
@@ -103,6 +106,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         }
         
         mDisplayRotationPreference = (PreferenceScreen) findPreference(KEY_DISPLAY_ROTATION);
+        mLockScreenRotation = (CheckBoxPreference) findPreference(KEY_LOCKSCREEN_ROTATION);
         mScreenTimeoutPreference = (ListPreference) findPreference(KEY_SCREEN_TIMEOUT);
         final long currentTimeout = Settings.System.getLong(resolver, SCREEN_OFF_TIMEOUT,
                 FALLBACK_SCREEN_TIMEOUT_VALUE);
@@ -143,9 +147,20 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
         StringBuilder summary = new StringBuilder();
         Boolean rotationEnabled = Settings.System.getInt(getContentResolver(),
                 Settings.System.ACCELEROMETER_ROTATION, 0) != 0;
+        Boolean lockScreenRotationEnabled = Settings.System.getInt(getContentResolver(),
+                Settings.System.LOCKSCREEN_ROTATION, 0) != 0;
         int mode = Settings.System.getInt(getContentResolver(),
                 Settings.System.ACCELEROMETER_ROTATION_ANGLES,
                 DisplayRotation.ROTATION_0_MODE|DisplayRotation.ROTATION_90_MODE|DisplayRotation.ROTATION_270_MODE);
+
+        if (mLockScreenRotation != null) {
+            if (!getResources().getBoolean(com.android.internal.R.bool.config_enableLockScreenRotation)) {
+                getPreferenceScreen().removePreference(mLockScreenRotation);
+            } else {
+                mLockScreenRotation.setChecked(Settings.System.getInt(getContentResolver(),
+                        Settings.System.LOCKSCREEN_ROTATION, 0) != 1);
+            }
+        }
 
         if (!rotationEnabled) {
             summary.append(getString(R.string.display_rotation_disabled));
@@ -153,6 +168,9 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             ArrayList rotationList = new ArrayList();
             String delim = "";
             summary.append(getString(R.string.display_rotation_enabled) + " ");
+            if (lockScreenRotationEnabled) {
+                rotationList.add(getString(R.string.lock_screen_title));
+            }
             if ((mode & DisplayRotation.ROTATION_0_MODE) != 0) {
                 rotationList.add(ROTATION_ANGLE_0);
             }
@@ -313,6 +331,11 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                 boolean value = mNotificationPulse.isChecked();
                 Settings.System.putInt(getContentResolver(), Settings.System.NOTIFICATION_LIGHT_PULSE,
                         value ? 1 : 0);
+                return true;
+            } else if (preference == mLockScreenRotation) {
+                Settings.System.putInt(getContentResolver(), Settings.System.LOCKSCREEN_ROTATION,
+                        mLockScreenRotation.isChecked() ? 1 : 0);
+                updateDisplayRotationPreferenceDescription();
                 return true;
             }
         return super.onPreferenceTreeClick(preferenceScreen, preference);

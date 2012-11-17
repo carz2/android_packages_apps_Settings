@@ -1625,6 +1625,7 @@
     <string name="status_bar_battery_status_hidden">Hidden</string> <!-- TODO: dedup -->
 
     <!-- Display : Rotation -->
+    <string name="display_lockscreen_rotation_title">Include lock screen</string>
     <string name="display_rotation_title">Rotation</string>
     <string name="display_rotation_enabled">Enabled.</string>
     <string name="display_rotation_disabled">Disabled.</string>
