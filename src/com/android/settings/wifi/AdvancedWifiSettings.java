@@ -116,8 +116,8 @@ public class AdvancedWifiSettings extends SettingsPreferenceFragment
         ListPreference sleepTimeoutPref = (ListPreference) findPreference(KEY_WIFI_IDLE_MN);
         if (sleepTimeoutPref != null) {
             sleepTimeoutPref.setOnPreferenceChangeListener(this);
-            long value = Secure.getLong(getContentResolver(),
-                    Secure.WIFI_IDLE_MS, DEFAULT_IDLE_MS);
+            long value = Global.getLong(getContentResolver(),
+                    Global.WIFI_IDLE_MS, DEFAULT_IDLE_MS);
             String stringValue = String.valueOf(value / (1000 * 60));
             sleepTimeoutPref.setValue(stringValue);
             updateSleepTimeoutSummary(sleepTimeoutPref, stringValue);
