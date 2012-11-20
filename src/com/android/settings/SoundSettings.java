@@ -310,14 +310,13 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         } else if (preference == mMusicFx) {
             // let the framework fire off the intent
             return false;
+        } else if (preference == mPowerSounds) {
+            Settings.System.putInt(getContentResolver(), Settings.System.POWER_SOUNDS_ENABLED,
+                    mPowerSounds.isChecked() ? 1 : 0);
         } else if (preference == mDockAudioSettings) {
             int dockState = mDockIntent != null
                     ? mDockIntent.getIntExtra(Intent.EXTRA_DOCK_STATE, 0)
                     : Intent.EXTRA_DOCK_STATE_UNDOCKED;
-        } else if (preference == mPowerSounds) {
-            Settings.System.putInt(getContentResolver(), Settings.System.POWER_SOUNDS_ENABLED,
-                    mPowerSounds.isChecked() ? 1 : 0);
-        }
 
             if (dockState == Intent.EXTRA_DOCK_STATE_UNDOCKED) {
                 showDialog(DIALOG_NOT_DOCKED);
