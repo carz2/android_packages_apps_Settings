@@ -1642,6 +1642,8 @@
 
     <!--#Carz2 -->
 
+    <string name="lock_screen_title">Lock screen</string>
+
     <!-- Sound settings screen -->
     <string name="volume_overlay_title">Volume panel style</string>
     <string name="silent_mode_title">Silent mode</string>
