@@ -46,8 +46,11 @@ import android.preference.PreferenceScreen;
 import android.provider.MediaStore;
 import android.provider.Settings;
 import android.telephony.TelephonyManager;
+import android.text.format.DateFormat;
 import android.util.Log;
 
+import java.util.Date;
+import java.util.Calendar;
 import java.util.List;
 
 public class SoundSettings extends SettingsPreferenceFragment implements
@@ -148,12 +151,21 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         if (!getResources().getBoolean(R.bool.has_silent_mode)) {
             findPreference(KEY_RING_VOLUME).setDependency(null);
         }
+        
+        mQuietHours = (PreferenceScreen) findPreference(KEY_QUIET_HOURS);
+        if (Settings.System.getInt(resolver, Settings.System.QUIET_HOURS_ENABLED, 0) == 1) {
+            mQuietHours.setSummary(getString(R.string.quiet_hours_active_from) + " " +
+                    returnTime(Settings.System.getString(resolver, Settings.System.QUIET_HOURS_START))
+                    + " " + getString(R.string.quiet_hours_active_to) + " " +
+                    returnTime(Settings.System.getString(resolver, Settings.System.QUIET_HOURS_END)));
+        } else {
+            mQuietHours.setSummary(getString(R.string.quiet_hours_summary));
+        }
 
         mVibrateWhenRinging = (CheckBoxPreference) findPreference(KEY_VIBRATE);
         mVibrateWhenRinging.setPersistent(false);
         mVibrateWhenRinging.setChecked(Settings.System.getInt(resolver,
                 Settings.System.VIBRATE_WHEN_RINGING, 0) != 0);
-        mQuietHours = (PreferenceScreen) findPreference(KEY_QUIET_HOURS);
 
         mDtmfTone = (CheckBoxPreference) findPreference(KEY_DTMF_TONE);
         mDtmfTone.setPersistent(false);
@@ -229,6 +241,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
     public void onResume() {
         super.onResume();
 
+        updateState(true);
         lookupRingtoneNames();
 
         IntentFilter filter = new IntentFilter(Intent.ACTION_DOCK_EVENT);
@@ -242,6 +255,21 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         getActivity().unregisterReceiver(mReceiver);
     }
 
+    // updateState in fact updates the UI to reflect the system state
+    private void updateState(boolean force) {
+        if (getActivity() == null) return;
+        ContentResolver resolver = getContentResolver();
+
+        if (Settings.System.getInt(resolver, Settings.System.QUIET_HOURS_ENABLED, 0) == 1) {
+            mQuietHours.setSummary(getString(R.string.quiet_hours_active_from) + " " +
+                    returnTime(Settings.System.getString(resolver, Settings.System.QUIET_HOURS_START))
+                    + " " + getString(R.string.quiet_hours_active_to) + " " +
+                    returnTime(Settings.System.getString(resolver, Settings.System.QUIET_HOURS_END)));
+        } else {
+            mQuietHours.setSummary(getString(R.string.quiet_hours_summary));
+        }
+    }
+
     private void updateRingtoneName(int type, Preference preference, int msg) {
         if (preference == null) return;
         Context context = getActivity();
@@ -250,8 +278,6 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         CharSequence summary = context.getString(com.android.internal.R.string.ringtone_unknown);
         // Is it a silent ringtone?
         if (ringtoneUri == null) {
-            summary = context.getString(com.android.internal.R.string.ringtone_silent);
-        } else {
             // Fetch the ringtone title from the media provider
             try {
                 Cursor cursor = context.getContentResolver().query(ringtoneUri,
@@ -334,9 +360,11 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         } else if (preference == mDockSounds) {
             Settings.Global.putInt(getContentResolver(), Settings.Global.DOCK_SOUNDS_ENABLED,
                     mDockSounds.isChecked() ? 1 : 0);
+
         } else if (preference == mDockAudioMediaEnabled) {
             Settings.Global.putInt(getContentResolver(), Settings.Global.DOCK_AUDIO_MEDIA_ENABLED,
                     mDockAudioMediaEnabled.isChecked() ? 1 : 0);
+
         } else {
             // If we didn't handle it, let preferences handle it.
             return super.onPreferenceTreeClick(preferenceScreen, preference);
@@ -357,6 +385,22 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         }
 
         return true;
+    }
+
+    private String returnTime(String t) {
+        if (t == null || t.equals("")) {
+            return "";
+        }
+        int hr = Integer.parseInt(t.trim());
+        int mn = hr;
+
+        hr = hr / 60;
+        mn = mn % 60;
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.HOUR_OF_DAY, hr);
+        cal.set(Calendar.MINUTE, mn);
+        Date date = cal.getTime();
+        return DateFormat.getTimeFormat(getActivity().getApplicationContext()).format(date);
     }
 
     @Override
