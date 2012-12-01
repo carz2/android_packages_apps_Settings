@@ -185,8 +185,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements
                 Settings.System.LOCKSCREEN_SOUNDS_ENABLED, 1) != 0);
         mPowerSounds = (CheckBoxPreference) findPreference(KEY_POWER_SOUNDS);
         mPowerSounds.setPersistent(false);
-        mPowerSounds.setChecked(Settings.System.getInt(resolver,
-                Settings.System.POWER_SOUNDS_ENABLED, 1) != 0);
+        mPowerSounds.setChecked(Settings.Global.getInt(resolver,
+                Settings.Global.POWER_SOUNDS_ENABLED, 1) != 0);
 
         mRingtonePreference = findPreference(KEY_RINGTONE);
         mNotificationPreference = findPreference(KEY_NOTIFICATION_SOUND);
@@ -330,7 +330,7 @@ public class SoundSettings extends SettingsPreferenceFragment implements
             return false;
 
         } else if (preference == mPowerSounds) {
-            Settings.System.putInt(getContentResolver(), Settings.System.POWER_SOUNDS_ENABLED,
+            Settings.Global.putInt(getContentResolver(), Settings.Global.POWER_SOUNDS_ENABLED,
                     mPowerSounds.isChecked() ? 1 : 0);
 
         } else if (preference == mDockAudioSettings) {
