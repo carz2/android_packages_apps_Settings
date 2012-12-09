@@ -34,8 +34,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     private static final String STATUS_BAR_CLOCK = "status_bar_show_clock";
 
-    private static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
-
     private static final String STATUS_BAR_SIGNAL = "status_bar_signal";
 
     private static final String STATUS_BAR_NOTIF_COUNT = "status_bar_notif_count";
@@ -48,8 +46,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
 
     private CheckBoxPreference mStatusBarClock;
 
-    private CheckBoxPreference mStatusBarBrightnessControl;
-
     private CheckBoxPreference mStatusBarNotifCount;
 
     @Override
@@ -61,7 +57,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         PreferenceScreen prefSet = getPreferenceScreen();
 
         mStatusBarClock = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_CLOCK);
-        mStatusBarBrightnessControl = (CheckBoxPreference) prefSet.findPreference(STATUS_BAR_BRIGHTNESS_CONTROL);
         mStatusBarAmPm = (ListPreference) prefSet.findPreference(STATUS_BAR_AM_PM);
         mStatusBarBattery = (ListPreference) prefSet.findPreference(STATUS_BAR_BATTERY);
         mStatusBarCmSignal = (ListPreference) prefSet.findPreference(STATUS_BAR_SIGNAL);
@@ -70,15 +65,6 @@ public class StatusBarSettings extends SettingsPreferenceFragment implements
         mStatusBarClock.setChecked((Settings.System.getInt(getActivity().getApplicationContext()
                 .getContentResolver(),
         		Settings.System.STATUS_BAR_CLOCK, 1) == 1));
-
-        try {
-            if (Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(), 
-            		Settings.System.SCREEN_BRIGHTNESS_MODE) == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC) {
-                mStatusBarBrightnessControl.setEnabled(false);
-                mStatusBarBrightnessControl.setSummary(R.string.status_bar_toggle_info);
-            }
-        } catch (SettingNotFoundException e) {
-        }
 
         int statusBarAmPm = Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
         	Settings.System.STATUS_BAR_AM_PM, 2);
