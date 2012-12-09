@@ -278,6 +278,8 @@ public class SoundSettings extends SettingsPreferenceFragment implements
         CharSequence summary = context.getString(com.android.internal.R.string.ringtone_unknown);
         // Is it a silent ringtone?
         if (ringtoneUri == null) {
+            summary = context.getString(com.android.internal.R.string.ringtone_silent);
+        } else {
             // Fetch the ringtone title from the media provider
             try {
                 Cursor cursor = context.getContentResolver().query(ringtoneUri,
