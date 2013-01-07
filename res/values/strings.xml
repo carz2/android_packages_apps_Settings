@@ -3668,6 +3668,10 @@
          [CHAR LIMIT=40] -->
     <string name="sound_category_system_title">System</string>
 
+    <!-- Category title for headset specific Settings.
+         [CHAR LIMIT=40] -->
+    <string name="headset_category_title">Headset</string>
+
     <!-- Wifi Setup For Setup Wizard with XL screen -->
     <!-- Title shown in Wifi Setup Wizard with XL screen -->
     <string name="wifi_setup_title">Wi-Fi setup</string>
@@ -4430,6 +4434,8 @@
     <string name="ok">OK</string>
 
     <string name="lock_screen_title">Lock screen</string>
+
+    <string name="headset_connect_player_title">Launch music app on connect</string>
 
     <!-- Reset Profiles -->
     <string name="profile_reset_title">Reset</string>
