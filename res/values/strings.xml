@@ -4638,6 +4638,10 @@
     <!-- convert sound to vibration toggle -->
     <string name="notification_convert_sound_to_vibration_title">Vibrate on notification</string>
     <string name="notification_convert_sound_to_vibration_summary">In vibrate mode, all notifications will vibrate regardless of individual app settings</string>
+
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">Safe headset volume</string>
+    <string name="safe_headset_volume_summary">Prevent loud volume levels when headset is first plugged in</string>
     <!--end #Carz2 -->
 
 </resources>
