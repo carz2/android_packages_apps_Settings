@@ -268,7 +268,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
 
         boolean isTelephony = pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
         if (isTelephony) {
-            addPreferencesFromResource(R.xml.security_settings_app_mms);
+            addPreferencesFromResource(R.xml.security_settings_app_sms);
             mSmsSecurityCheck = (ListPreference) root.findPreference(KEY_SMS_SECURITY_CHECK_PREF);
             mSmsSecurityCheck.setOnPreferenceChangeListener(this);
             int smsSecurityCheck = Integer.valueOf(mSmsSecurityCheck.getValue());
