@@ -1830,4 +1830,174 @@
     <string name="user_picture_title" msgid="7297782792000291692">"Ідентифікатор фотографії"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Широкомовні повідомлення мережі"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Виберіть типи сповіщень про надзвичайні ситуації, які мають відображатися."</string>
+
+    <!-- Quiet hours -->
+    <string name="quiet_hours_title">Тихі години</string>
+    <string name="quiet_hours_summary">Налаштувати години, коли пристрій повинен бути тихим</string>
+    <string name="quiet_hours_note_title">Зауваження</string>
+    <string name="quiet_hours_note_summary">Вхідні дзвінки будуть вести себе як звичайо у тихі години</string>
+    <string name="quiet_hours_enabled">Увімкнути тихі години</string>
+    <string name="quiet_hours_enabled_on">Тихі години активовано</string>
+    <string name="quiet_hours_enabled_off">Сповіщення будуть поводити себе як зазвичай</string>
+    <string name="quiet_hours_start">Початок тихих годин</string>
+    <string name="quiet_hours_start_summary">Коли понинаються тихі години</string>
+    <string name="quiet_hours_end">Кінець тихих годин</string>
+    <string name="quiet_hours_end_summary">Коли закінчуються тихі години</string>
+    <string name="quiet_hours_mute">Вимкнути звук сповіщень</string>
+    <string name="quiet_hours_mute_on">Звуки сповіщень не відтворюються</string>
+    <string name="quiet_hours_mute_off">Звуки відтворюються нормально</string>
+    <string name="quiet_hours_still">Вимкнути вібрацію</string>
+    <string name="quiet_hours_still_on">Пристрій не буде вібрувати</string>
+    <string name="quiet_hours_still_off">Пристрій вібрує нормально</string>
+    <string name="quiet_hours_dim">Вимкнути світлові сповіщення</string>
+    <string name="quiet_hours_dim_on">Світлові сповіщення вимкнені</string>
+    <string name="quiet_hours_dim_off">Світлові сповіщення увімкнені</string>
+    <string name="quiet_hours_haptic">Вимкнути відгук на натиск</string>
+    <string name="quiet_hours_haptic_on">Відгук на натиск вимкнено</string>
+    <string name="quiet_hours_haptic_off">Відгук на натиск увімкнено</string>
+    <string name="quiet_hours_active_from">Активно з</string>
+    <string name="quiet_hours_active_to">по</string>
+
+    <!-- time range preference -->
+    <string name="start_time_title">Початок</string>
+    <string name="end_time_title">Кінець</string>
+
+    <!-- convert sound to vibration toggle -->
+    <string name="notification_convert_sound_to_vibration_title">Вібрація при сповіщеннях</string>
+    <string name="notification_convert_sound_to_vibration_summary">В режимі \"Вібро\" вібрувати при сповіщеннях незалежно від налаштувань програм</string>
+
+    <!-- Hostname setting -->
+    <string name="device_hostname">Ім’я пристрою</string>
+
+    <!-- About phone screen, setting option name-->
+    <string name="mod_version">Версія CyanogenMod</string>
+    <string name="mod_version_default">Невідомо</string>
+
+    <!-- About phone screen, build date of ROM -->
+    <string name="build_date">Дата збірки</string>
+
+    <!-- About device screen, Cpu info. -->
+    <string name="cpu_info">Процесор</string>
+    <!-- About phone screen, Free memory info -->
+    <string name="mem_info">Пам’ять</string>
+    <!-- About phone screen, status item label -->
+
+    <string name="lock_screen_title">Екран блокування</string>
+
+    <!-- Lock Screen Shortcuts -->
+    <string name="lockscreen_target_info">Потягніть повзунок до цілі, щоб призначити ярлик</string>
+    <string name="lockscreen_target_title">Ярлики екрану блокування</string>
+    <string name="lockscreen_target_summary">Встановлення чи налаштування ярликів екрану блокування</string>
+    <string name="lockscreen_target_reset">Ярлики экрану блокування скинуті до типових</string>
+    <string name="lockscreen_target_save">Ярлики екрану бокування збережені</string>
+    <string name="lockscreen_target_reset_title">Скинути</string>
+    <string name="lockscreen_target_reset_message">Видати всі створені ярлики екрану блокування та встановити типові значення?</string>
+    <string name="lockscreen_target_empty">Пусто</string>
+    <string name="lockscreen_target_edit_title">Змінити ярлик та значок</string>
+    <string name="lockscreen_target_edit_msg">Виберіть або змініть потрібні програми чи дії та іконку</string>
+
+    <!-- Display : Rotation -->
+    <string name="display_rotation_title">Поворот екрану</string>
+    <string name="display_rotation_disabled">Вимкнено</string>
+    <string name="display_rotation_unit">градусів</string>
+    <string name="display_rotation_category_title">Режими повороту</string>
+    <string name="display_rotation_0_title">0 градусів</string>
+    <string name="display_rotation_90_title">90 градусів</string>
+    <string name="display_rotation_180_title">180 градусів</string>
+    <string name="display_rotation_270_title">270 градусів</string>
+
+    <!-- String for ShortcutPickHelper -->
+    <string name="picker_activities">Дії</string>
+    <string name="select_custom_app_title">Вибрати власну програму</string>
+    <string name="select_custom_activity_title">Вибрати власну дію</string>
+    <string name="icon_picker_choose_icon_title">Вибрати значок</string>
+    <string name="icon_picker_browser">Браузер</string>
+    <string name="icon_picker_movie">Відео</string>
+    <string name="icon_picker_gallery">Галерея</string>
+    <string name="icon_picker_calendar">Календар</string>
+    <string name="icon_picker_camera">Камера</string>
+    <string name="icon_picker_maps">Карти</string>
+    <string name="icon_picker_music">Музика</string>
+    <string name="icon_picker_nav_normal">Навігація</string>
+    <string name="icon_picker_podcast">Подкасти</string>
+    <string name="icon_picker_sms">Повідомлення</string>
+    <string name="icon_picker_phone">Телефон</string>
+    <string name="icon_picker_alarm">Годинник</string>
+    <string name="icon_picker_email2">Email (Holo)</string>
+    <string name="icon_picker_google_small">Google (малий)</string>
+    <string name="icon_picker_rss">RSS</string>
+    <string name="icon_picker_twitter">Твіттер</string>
+
+    <!-- String for IconPicker -->
+    <string name="icon_picker_title">Виберіть джерело значків</string>
+    <string name="icon_picker_system_icons_title">Системні значки</string>
+    <string name="icon_picker_gallery_title">Галерея</string>
+    <string name="icon_picker_pack_title">Набір значків</string>
+
+    <!-- Sound settings screen -->
+    <string name="volume_overlay_title">Панель гучності</string>
+    <string name="headset_category_title">Гарнітура</string>
+    <string name="volbtn_music_controls_title">Керування музикою кнопками гучності</string>
+    <string name="volbtn_music_controls_summary">Коли екран вимкнено, довгий натиск кнопок гучності перемикає пісні</string>
+    <string name="volume_ring_only_description">Дзвінок</string>
+    <string name="ring_mode_title">Режим дзвінка</string>
+    <string name="ring_mode_normal">Звичайний</string>
+    <string name="ring_mode_vibrate">Вібро</string>
+    <string name="ring_mode_mute">Беззвучний</string>
+
+    <!-- Status bar #CM -->
+    <string name="status_bar_title">Рядок стану</string>
+    <string name="status_bar_clock_title">Годинник</string>
+    <string name="status_bar_general_title">Головні</string>
+    <string name="status_bar_show_clock_title">Показувати годинник</string>
+    <string name="status_bar_am_pm_title">Стиль AM/PM</string>
+    <string name="status_bar_am_pm_info">Увімкнено 24-годинний формат</string>
+    <string name="status_bar_battery_title">Стиль батареї</string>
+    <string name="status_bar_toggle_brightness">Керування яскравістю</string>
+    <string name="status_bar_toggle_brightness_summary">Змінювати яскравість при проведенні по рядку стану</string>
+    <string name="status_bar_toggle_info">Увімкнене автоматичне регулювання яскравості</string>
+    <string name="status_bar_signal_text_title">Стиль сигналу</string>
+    <string name="status_bar_style_icon">Іконка</string>
+    <string name="status_bar_style_hidden">Прихований</string>
+    <string name="status_bar_signal_text_show_text">Текст</string>
+    <string name="status_bar_battery_status_percentage">Процентний</string>
+    <string name="status_bar_battery_status_circle">Круг</string>
+    <string name="status_bar_battery_status_circle_percentage">Круг з процентами</string>
+
+    <!-- Status bar notification count -->
+    <string name="status_bar_notif_count_title">Лічильник сповіщень</string>
+    <string name="status_bar_notif_count_summary">Показувати кількість нових сповіщень в рядку стану</string>
+
+    <!-- Lock screen background -->
+    <string name="lockscreen_custom_background_title">Фон</string>
+    <string name="lockscreen_custom_background_dialog_title">Виберіть колір</string>
+    <string name="lockscreen_background_result_successful">Фон змінено</string>
+    <string name="lockscreen_background_result_not_successful">Фон не змінено</string>
+    <string name="lockscreen_background_color_fill">Колір заливки</string>
+    <string name="lockscreen_background_custom_image">Користувацьке зображення</string>
+    <string name="lockscreen_background_default_wallpaper">Типові шпалери</string>
+
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Запуск програвача</string>
+    <string name="headset_connect_player_summary">Запускать програвач при під’єднанні навушників</string>
+
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">Обмеження гучності</string>
+    <string name="safe_headset_volume_summary">Зменшувати гучність при першому під’єднанні навушників</string>
+
+    <!-- Automatic brightness customization -->
+    <string name="light_sensor_current_value">Поточний показ датчика: <xliff:g id="light_level">%d</xliff:g> лк</string>
+    <string name="auto_brightness_dialog_title">Рівні автоматичної підсвітки</string>
+    <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> лк</string>
+    <string name="auto_brightness_last_level_format"><xliff:g id="level">%1$d</xliff:g> -\n\u221e лк</string>
+    <string name="auto_brightness_adjust_button">Регулювання</string>
+    <string name="auto_brightness_reset_button">Скидання</string>
+    <string name="auto_brightness_split_dialog_title">Розділити рівні яскравості</string>
+    <string name="auto_brightness_reset_dialog_title">Скинути рівні?</string>
+    <string name="auto_brightness_reset_confirmation">Всі рівні підсвітки будуть скинуті до типових значень.</string>
+    <string name="auto_brightness_split_lux_format">Ділення позиції (між <xliff:g id="min">%1$d</xliff:g> та <xliff:g id="max">%2$d</xliff:g> лк)</string>
+    <string name="auto_brightness_level_options">Налагтування рівня освітленості</string>
+    <string name="auto_brightness_menu_edit_lux">Діапазон яскравості</string>
+    <string name="auto_brightness_menu_split">Розділити</string>
+    <string name="auto_brightness_menu_remove">Видалити</string>
 </resources>

@@ -1831,4 +1831,121 @@
     <string name="user_picture_title" msgid="7297782792000291692">"Foto-ID"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Cell Broadcasts"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Wählen Sie aus, welche Notfallbenachrichtigungen angezeigt werden sollen."</string>
+
+    <string name="ok">OK</string>
+
+    <!-- Quiet hours -->
+    <string name="quiet_hours_title">Ruhige Stunden</string>
+    <string name="quiet_hours_summary">Benachrichtigungen in einem vorgegebenen Zeitraum ändern</string>
+    <string name="quiet_hours_note_title">Hinweis</string>
+    <string name="quiet_hours_note_summary">Ankommende Anrufe werden während der ruhigen Stunden normal signalisiert</string>
+    <string name="quiet_hours_enabled">Ruhige Stunden aktiv</string>
+    <string name="quiet_hours_enabled_on">Ruhige Stunden sind aktiviert</string>
+    <string name="quiet_hours_enabled_off">Benachrichtigungen werden normal signalisiert</string>
+    <string name="quiet_hours_start">Beginn der ruhigen Stunden</string>
+    <string name="quiet_hours_start_summary">Uhrzeit, zu der die ruhigen Stunden beginnen</string>
+    <string name="quiet_hours_end">Ende der ruhigen Stunden</string>
+    <string name="quiet_hours_end_summary">Uhrzeit, zu der die ruhigen Stunden enden</string>
+    <string name="quiet_hours_mute">Benachrichtigungston</string>
+    <string name="quiet_hours_mute_on">Deaktivieren</string>
+    <string name="quiet_hours_mute_off">Nicht ändern</string>
+    <string name="quiet_hours_still">Vibration</string>
+    <string name="quiet_hours_still_on">Deaktivieren</string>
+    <string name="quiet_hours_still_off">Nicht ändern</string>
+    <string name="quiet_hours_dim">Benachrichtigungslicht</string>
+    <string name="quiet_hours_dim_on">Deaktivieren</string>
+    <string name="quiet_hours_dim_off">Nicht ändern</string>
+    <string name="quiet_hours_haptic">Haptisches Feedback</string>
+    <string name="quiet_hours_haptic_on">Deaktivieren</string>
+    <string name="quiet_hours_haptic_off">Nicht ändern</string>
+    <string name="quiet_hours_active_from">Aktiv von</string>
+    <string name="quiet_hours_active_to">bis</string>
+
+    <!-- About phone scree - Setting option name -->
+    <string name="mod_version">CyanogenMod-Version</string>
+    <string name="mod_version_default">Unbekannt</string>
+
+    <!-- About phone screen - Build date of ROM -->
+    <string name="build_date">Build-Datum</string>
+
+    <!-- About device screen - CPU info -->
+    <string name="cpu_info">Prozessor</string>
+
+    <!-- About phone screen - Free memory info -->
+    <string name="mem_info">Arbeitsspeicher</string>
+
+    <!-- Launcher settings -->
+    <string name="launcher_settings_title">Launcher</string>
+
+    <!-- Themes settings -->
+    <string name="themes_settings_title">Designs</string>
+
+    <!-- Lock Screen title -->
+    <string name="lock_screen_title">Bildschirmsperre</string>
+
+    <!-- Lock screen shortcuts -->
+    <string name="lockscreen_target_info">Schieber zur gewünschten Position ziehen, um dort eine Anwendung zu platzieren</string>
+    <string name="lockscreen_target_title">Sperrbildschirm-Anwendungen</string>
+    <string name="lockscreen_target_summary">Anwendungen zum Sperrbildschirm hinzufügen</string>
+    <string name="lockscreen_target_reset">Sperrbildschirm-Anwendungen auf Standard zurückgesetzt</string>
+    <string name="lockscreen_target_save">Sperrbildschirm-Anwendungen gespeichert</string>
+    <string name="lockscreen_target_reset_title">Zurücksetzen</string>
+    <string name="lockscreen_target_reset_message">Anwendungen vom Sperrbildschirm löschen und auf Standard zurücksetzen?</string>
+    <string name="lockscreen_target_empty">Nicht zugewiesen</string>
+    <string name="lockscreen_target_edit_title">Zuordnung bearbeiten</string>
+    <string name="lockscreen_target_edit_msg">Anwendung oder Symbol zum Ändern berühren</string>
+
+    <!-- Lock screen shortcuts -->
+    <string name="picker_activities">Aktivitäten</string>
+    <string name="select_custom_app_title">Anwendung wählen</string>
+    <string name="select_custom_activity_title">Aktivität wählen</string>
+    <string name="icon_picker_choose_icon_title">Symbol wählen</string>
+    <string name="icon_picker_alarm">Wecker</string>
+    <string name="icon_picker_browser">Browser</string>
+    <string name="icon_picker_calendar">Kalender</string>
+    <string name="icon_picker_camera">Kamera</string>
+    <string name="icon_picker_chrome">Chrome</string>
+    <string name="icon_picker_email">E-Mail</string>
+    <string name="icon_picker_email2">E-Mail (Holo)</string>
+    <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_gallery">Galerie</string>
+    <string name="icon_picker_google_small">Google (klein)</string>
+    <string name="icon_picker_googleplus">Google+</string>
+    <string name="icon_picker_googletalk">Google Talk</string>
+    <string name="icon_picker_maps">Maps</string>
+    <string name="icon_picker_movie">Film</string>
+    <string name="icon_picker_music">Musik</string>
+    <string name="icon_picker_nav_normal">Navigation</string>
+    <string name="icon_picker_phone">Telefon</string>
+    <string name="icon_picker_podcast">Podcast</string>
+    <string name="icon_picker_rss">RSS</string>
+    <string name="icon_picker_search">Suche</string>
+    <string name="icon_picker_sms">SMS/MMS</string>
+    <string name="icon_picker_twitter">Twitter</string>
+
+    <!-- String for IconPicker -->
+    <string name="icon_picker_title">Symbolquelle wählen</string>
+    <string name="icon_picker_system_icons_title">Systemsymbole</string>
+    <string name="icon_picker_gallery_title">Galerie</string>
+    <string name="icon_picker_pack_title">Symbolbibliothek</string>
+
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">Lautstärkebegrenzung</string>
+    <string name="safe_headset_volume_summary">Schützt beim Einstecken eines Kopfhörers vor zu hoher Lautstärke</string>
+
+    <!-- Automatic brightness customization -->
+    <string name="light_sensor_current_value">Aktueller Sensorwert: <xliff:g id="light_level">%d</xliff:g> Lux</string>
+    <string name="auto_brightness_dialog_title">Helligkeitsstufen</string>
+    <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> Lux</string>
+    <string name="auto_brightness_last_level_format"><xliff:g id="level">%1$d</xliff:g> -\n\u221e Lux</string>
+    <string name="auto_brightness_adjust_button">Anpassen</string>
+    <string name="auto_brightness_reset_button">Zurücksetzen</string>
+    <string name="auto_brightness_split_dialog_title">Helligkeitsstufe aufteilen</string>
+    <string name="auto_brightness_reset_dialog_title">Helligkeitsstufen zurücksetzen?</string>
+    <string name="auto_brightness_reset_confirmation">Alle Helligkeitsstufen werden auf ihre Standardwerte zurückgesetzt.</string>
+    <string name="auto_brightness_split_lux_format">Teilungsposition (zwischen <xliff:g id="min">%1$d</xliff:g> und <xliff:g id="max">%2$d</xliff:g> Lux)</string>
+    <string name="auto_brightness_level_options">Aktionen</string>
+    <string name="auto_brightness_menu_edit_lux">Bearbeiten</string>
+    <string name="auto_brightness_menu_split">Aufteilen</string>
+    <string name="auto_brightness_menu_remove">Entfernen</string>
 </resources>

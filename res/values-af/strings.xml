@@ -1830,4 +1830,157 @@
     <string name="user_picture_title" msgid="7297782792000291692">"Foto-ID"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"Seluitsendings"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Kies die tipe noodwaarskuwings wat vertoon moet word."</string>
+
+    <string name="ok">OK</string>
+
+    <!-- Quiet hours -->
+    <string name="quiet_hours_title">Stille-ure</string>
+    <string name="quiet_hours_summary">Konfigureer die ure wat die toestel moet stil wees</string>
+    <string name="quiet_hours_note_title">Nota</string>
+    <string name="quiet_hours_note_summary">Inkomende oproepe word nie deur stille-ure geaffekteer nie</string>
+    <string name="quiet_hours_enabled">Aktiveer stille-ure</string>
+    <string name="quiet_hours_enabled_on">Stil ure sal geaktiveer word</string>
+    <string name="quiet_hours_enabled_off">Kennisgewings sal normaal funksioneer</string>
+    <string name="quiet_hours_start">Begin van stille-ure</string>
+    <string name="quiet_hours_start_summary">Wanneer om stille-ure te begin afdwing</string>
+    <string name="quiet_hours_end">Einde van stille-ure</string>
+    <string name="quiet_hours_end_summary">Wanneer om op te hou om stille-ure af te dwing</string>
+    <string name="quiet_hours_mute">Demp kennisgewings</string>
+    <string name="quiet_hours_mute_on">Geen klank sal gespeel word nie</string>
+    <string name="quiet_hours_mute_off">Klank speel normaal</string>
+    <string name="quiet_hours_still">Deaktiveer vibrasies</string>
+    <string name="quiet_hours_still_on">Toestel sal nie vibreer nie</string>
+    <string name="quiet_hours_still_off">Toestel sal normaal vibreer</string>
+    <string name="quiet_hours_dim">Deaktiveer kennisgewing liggie</string>
+    <string name="quiet_hours_dim_on">Kennisgewing liggie sal gedeaktiveer word</string>
+    <string name="quiet_hours_dim_off">Kennisgewing liggie sal normaal funksioneer</string>
+    <string name="quiet_hours_haptic">Deaktiveer haptiese terugvoer</string>
+    <string name="quiet_hours_haptic_on">Haptiese terugvoer sal gedeaktiveer word</string>
+    <string name="quiet_hours_haptic_off">Haptiese terugvoer sal normaal funksioneer</string>
+    <string name="quiet_hours_active_from">Aktiveer vanaf</string>
+    <string name="quiet_hours_active_to">tot</string>
+
+    <!-- About phone screen,  setting option name-->
+    <string name="mod_version">CyanogenMod weergawe</string>
+    <string name="mod_version_default">Onbekend</string>
+    <!-- About phone screen, build date of ROM -->
+    <string name="build_date">Bou datum</string>
+    <string name="build_date_default">2012-01-01-0000</string>
+    <!-- About device screen, Cpu info. -->
+    <string name="cpu_info">SVE</string>
+    <!-- About phone screen, Free memory info -->
+    <string name="mem_info">Geheue</string>
+    <!-- About phone screen, status item label -->
+
+    <!-- Themes settings  -->
+    <string name="themes_settings_title">Temas</string>
+
+    <string name="lock_screen_title">Slotskerm</string>
+
+    <!-- Lock Screen Shortcuts -->
+    <string name="lockscreen_target_info">Verskuif die knoppie teikens om kits-loodskortpaaie toe te wys</string>
+    <string name="lockscreen_target_title">Knoppie kits-loodskortpaaie</string>
+    <string name="lockscreen_target_summary">Bestuur persoonlike slotskerm kits-loodskortpaaie</string>
+    <string name="lockscreen_target_reset">Slotskerm kits-loodskortpaaie teruggestel na standaard</string>
+    <string name="lockscreen_target_save">Slotskerm kits-loodskortpaaie gestoor</string>
+    <string name="lockscreen_target_reset_title">Stel terug</string>
+    <string name="lockscreen_target_reset_message">Verwyder alle gebruiker geskepte slotskerm kits-loodskortpaaie en stel terug na standaard?</string>
+    <string name="lockscreen_target_empty">leeg</string>
+    <string name="lockscreen_target_edit_title">Verander kits-loodskortpad en ikoon</string>
+    <string name="lockscreen_target_edit_msg">Kies of verander die gewenste program of aktiwiteit en die gepaardgaande ikoon</string>
+
+    <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
+    <string name="soundtone_title">Kennisgewingtoon</string>
+    <string name="soundtone_summary">""</string>
+
+    <!-- Lock screen shortcuts -->
+    <string name="picker_activities">Aktiwiteite</string>
+    <string name="select_custom_app_title">Kies persoonlike program</string>
+    <string name="select_custom_activity_title">Kies persoonlike aktiwiteit</string>
+    <string name="icon_picker_choose_icon_title">Kies ikoon</string>
+    <string name="icon_picker_alarm">Wekker</string>
+    <string name="icon_picker_browser">Webleser</string>
+    <string name="icon_picker_calendar">Kalender</string>
+    <string name="icon_picker_camera">Kamera</string>
+    <string name="icon_picker_chrome">Chrome</string>
+    <string name="icon_picker_email">E-pos</string>
+    <string name="icon_picker_email2">E-pos (Holo)</string>
+    <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_gallery">Gallery</string>
+    <string name="icon_picker_google_small">Google (klein)</string>
+    <string name="icon_picker_googleplus">Google Plus</string>
+    <string name="icon_picker_googletalk">Google Talk</string>
+    <string name="icon_picker_maps">Kaarte</string>
+    <string name="icon_picker_movie">Flieks</string>
+    <string name="icon_picker_music">Musiek</string>
+    <string name="icon_picker_nav_normal">Navigasie</string>
+    <string name="icon_picker_phone">Telefoon</string>
+    <string name="icon_picker_podcast">Podcast</string>
+    <string name="icon_picker_rss">Rss</string>
+    <string name="icon_picker_search">Soek</string>
+    <string name="icon_picker_sms">Boodskap</string>
+    <string name="icon_picker_twitter">Twitter</string>
+
+    <!-- String for IconPicker -->
+    <string name="icon_picker_title">Kies ikoon bron</string>
+    <string name="icon_picker_system_icons_title">Stelsel ikone</string>
+    <string name="icon_picker_gallery_title">Gallery</string>
+    <string name="icon_picker_pack_title">Ikoonpak</string>
+
+    <!-- Status bar  -->
+    <string name="status_bar_title">Statusbalk</string>
+    <string name="status_bar_clock_title">Klok</string>
+    <string name="status_bar_general_title">Algemeen</string>
+    <string name="status_bar_show_clock_title">Vertoon klok</string>
+    <string name="status_bar_am_pm_title">Tipe VM/NM</string>
+    <string name="status_bar_am_pm_info">24-uur klok is geaktiveer</string>
+    <string name="status_bar_battery_title">Battery status styl</string>
+    <string name="status_bar_toggle_brightness">Helderheid beheer</string>
+    <string name="status_bar_toggle_brightness_summary">Verander helderheid aan deur te gly oor die statusbalk</string>
+    <string name="status_bar_toggle_info">Outomatiese helderheid is geaktiveer</string>
+    <string name="status_bar_signal_text_title">Sein status styl</string>
+    <string name="status_bar_style_icon">Ikoon</string>
+    <string name="status_bar_style_hidden">Versteek</string>
+    <string name="status_bar_signal_text_show_text">Teks</string>
+    <string name="status_bar_battery_status_percentage">Persentasie</string>
+    <string name="status_bar_battery_status_circle">Sirkel</string>
+    <string name="status_bar_battery_status_circle_percentage">Sirkel met persentasie</string>
+
+    <!-- Status bar notification count -->
+    <string name="status_bar_notif_count_title">Kennisgewingstelling</string>
+    <string name="status_bar_notif_count_summary">Vertoon die aantal uitstaande kennisgewings</string>
+
+    <!-- Custom lock screen background -->
+    <string name="lockscreen_custom_background_title">Agtergrond</string>
+    <string name="lockscreen_custom_background_dialog_title">Kies kleur</string>
+    <string name="lockscreen_background_result_successful">Agtergrond suksesvol verander</string>
+    <string name="lockscreen_background_result_not_successful">Agtergrond kon nie verander word nie</string>
+    <string name="lockscreen_background_color_fill">Agtergrond kleur</string>
+    <string name="lockscreen_background_custom_image">Persoonlike prentjie</string>
+    <string name="lockscreen_background_default_wallpaper">Standaard agtergrond</string>
+
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">Begin musiek program</string>
+    <string name="headset_connect_player_summary">Begin die standaard musiek program wanneer oorfone gekoppel word</string>
+
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">Veilige oorfone volume</string>
+    <string name="safe_headset_volume_summary">Voorkom te harde volume wanneer oorfone aanvanklik gekoppel word</string>
+
+    <!-- Automatic brightness customization -->
+    <string name="light_sensor_current_value">Huidige ligsensor waarde: <xliff:g id="light_level">%d</xliff:g> lux</string>
+    <string name="auto_brightness_dialog_title">Outomatiese helderheid</string>
+    <string name="auto_brightness_level_format"><xliff:g id="level">%1$d</xliff:g> lux</string>
+    <string name="auto_brightness_last_level_format"><xliff:g id="level">%1$d</xliff:g> -\n\u221e lux</string>
+    <string name="auto_brightness_brightness_format"><xliff:g id="percent">%s</xliff:g>%%</string>
+    <string name="auto_brightness_adjust_button">Verstel</string>
+    <string name="auto_brightness_reset_button">Stel terug</string>
+    <string name="auto_brightness_split_dialog_title">Verdeel helderheidsvlak</string>
+    <string name="auto_brightness_reset_dialog_title">Stel terug?</string>
+    <string name="auto_brightness_reset_confirmation">Alle helderheidsvlakke sal teruggestel word na die oorspronklike waardes.</string>
+    <string name="auto_brightness_split_lux_format">Verdeel posisie (tussen <xliff:g id="min">%1$d</xliff:g> en <xliff:g id="max">%2$d</xliff:g> lux)</string>
+    <string name="auto_brightness_level_options">Ligvlak opsies</string>
+    <string name="auto_brightness_menu_edit_lux">Omgewing helderheidsreeks</string>
+    <string name="auto_brightness_menu_split">Verdeel</string>
+    <string name="auto_brightness_menu_remove">Verwyder</string>
 </resources>

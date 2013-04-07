@@ -1830,4 +1830,177 @@
     <string name="user_picture_title" msgid="7297782792000291692">"照片 ID"</string>
     <string name="cell_broadcast_settings" msgid="8415582011920085222">"小区广播"</string>
     <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"请选择要显示的紧急消息类型。"</string>
+
+
+    <string name="ok">确定</string>
+
+    <!-- Quiet hours -->
+    <string name="quiet_hours_title">安静时段</string>
+    <string name="quiet_hours_summary">配置设备应该安静的时段</string>
+    <string name="quiet_hours_note_title">注意</string>
+    <string name="quiet_hours_note_summary">安静时段将不会影响来电的正常行为</string>
+    <string name="quiet_hours_enabled">开启安静时段</string>
+    <string name="quiet_hours_enabled_on">安静时段设置将会被执行</string>
+    <string name="quiet_hours_enabled_off">通知提醒将会像往常一样运行</string>
+    <string name="quiet_hours_start">安静时段起始时间</string>
+    <string name="quiet_hours_start_summary">什么时间开始执行安静时段的设置</string>
+    <string name="quiet_hours_end">安静时段结束时间</string>
+    <string name="quiet_hours_end_summary">什么时间结束安静时段的执行</string>
+    <string name="quiet_hours_mute">静音提醒</string>
+    <string name="quiet_hours_mute_on">通知提醒将会被静音</string>
+    <string name="quiet_hours_mute_off">声音像往常一样</string>
+    <string name="quiet_hours_still">禁用震动</string>
+    <string name="quiet_hours_still_on">设备将不会震动</string>
+    <string name="quiet_hours_still_off">设备将会像往常一样震动</string>
+    <string name="quiet_hours_dim">禁用指示灯</string>
+    <string name="quiet_hours_dim_on">指示灯将被禁用</string>
+    <string name="quiet_hours_dim_off">指示灯将会正常运行</string>
+    <string name="quiet_hours_haptic">禁用触控反馈</string>
+    <string name="quiet_hours_haptic_on">触控反馈将被禁用</string>
+    <string name="quiet_hours_haptic_off">触控反馈将像往常一样</string>
+    <string name="quiet_hours_active_from">从</string>
+    <string name="quiet_hours_active_to">激活到</string>
+
+    <!-- Time range preference -->
+    <string name="start_time_title">起始</string>
+    <string name="end_time_title">结束</string>
+
+    <!-- Hostname setting -->
+    <string name="device_hostname">设备网络名</string>
+
+    <!-- About phone screen,  setting option name-->
+    <string name="mod_version">CyanogenMod 版本</string>
+    <string name="mod_version_default">未知</string>
+    <!-- About phone screen, build date of ROM -->
+    <string name="build_date">编译日期</string>
+    <!-- About device screen, Cpu info. -->
+    <string name="cpu_info">处理器</string>
+    <!-- About phone screen, Free memory info -->
+    <string name="mem_info">内存</string>
+    <!-- About phone screen, status item label -->
+
+    <!-- Launcher settings  -->
+    <string name="launcher_settings_title">启动器</string>
+
+    <!-- Themes settings  -->
+    <string name="themes_settings_title">主题</string>
+    <string name="lock_screen_title">锁屏界面</string>
+
+    <!-- Lock Screen Shortcuts -->
+    <string name="lockscreen_target_info">把滑块拉到指定的位置以选择快捷方式</string>
+    <string name="lockscreen_target_title">锁屏快捷方式</string>
+    <string name="lockscreen_target_summary">查看或改变锁屏界面上的快捷方式</string>
+    <string name="lockscreen_target_reset">锁屏快捷方式已还原为默认值</string>
+    <string name="lockscreen_target_save">锁屏快捷方式已保存</string>
+    <string name="lockscreen_target_reset_title">重置</string>
+    <string name="lockscreen_target_reset_message">删除所有用户设定的快捷方式并还原为默认值?</string>
+    <string name="lockscreen_target_empty">空</string>
+    <string name="lockscreen_target_edit_title">编辑快捷方式与图标</string>
+    <string name="lockscreen_target_edit_msg">选定或改变与快捷方式所关联的程序与图标</string>
+
+    <!-- Display : Rotation  -->
+    <string name="display_rotation_title">旋转</string>
+    <string name="display_rotation_disabled">已禁用</string>
+    <string name="display_rotation_unit">度</string>
+    <string name="display_rotation_category_title">旋转模式</string>
+    <string name="display_rotation_0_title">0 度</string>
+    <string name="display_rotation_90_title">90 度</string>
+    <string name="display_rotation_180_title">180 度</string>
+    <string name="display_rotation_270_title">270 度</string>
+
+    <!-- Lock screen shortcuts -->
+    <string name="picker_activities">活动</string>
+    <string name="select_custom_app_title">选择自定义程序</string>
+    <string name="select_custom_activity_title">选择自定义活动</string>
+    <string name="icon_picker_choose_icon_title">选择图标</string>
+    <string name="icon_picker_alarm">闹钟</string>
+    <string name="icon_picker_browser">浏览器</string>
+    <string name="icon_picker_calendar">日历</string>
+    <string name="icon_picker_camera">相机</string>
+    <string name="icon_picker_chrome">Chrome</string>
+    <string name="icon_picker_email">Email</string>
+    <string name="icon_picker_email2">Email Holo</string>
+    <string name="icon_picker_facebook">Facebook</string>
+    <string name="icon_picker_gallery">图库</string>
+    <string name="icon_picker_google_small">Google (小)</string>
+    <string name="icon_picker_googleplus">Google Plus</string>
+    <string name="icon_picker_googletalk">Google Talk</string>
+    <string name="icon_picker_maps">地图</string>
+    <string name="icon_picker_movie">影片</string>
+    <string name="icon_picker_music">音乐</string>
+    <string name="icon_picker_nav_normal">导航</string>
+    <string name="icon_picker_phone">电话</string>
+    <string name="icon_picker_podcast">播客</string>
+    <string name="icon_picker_rss">RSS</string>
+    <string name="icon_picker_search">搜索</string>
+    <string name="icon_picker_sms">短信</string>
+    <string name="icon_picker_twitter">Twitter</string>
+
+    <!-- String for IconPicker -->
+    <string name="icon_picker_title">选择图标来源</string>
+    <string name="icon_picker_system_icons_title">系统图标</string>
+    <string name="icon_picker_gallery_title">图库</string>
+    <string name="icon_picker_pack_title">图标包</string>
+
+    <!-- Status bar  -->
+    <string name="status_bar_title">状态栏</string>
+    <string name="status_bar_clock_title">时钟</string>
+    <string name="status_bar_general_title">常规</string>
+    <string name="status_bar_show_clock_title">显示时钟</string>
+    <string name="status_bar_am_pm_title">上午/下午样式</string>
+    <string name="status_bar_am_pm_info">24 小时时钟已启用</string>
+    <string name="status_bar_battery_title">电池状态样式</string>
+    <string name="status_bar_toggle_brightness">亮度控制</string>
+    <string name="status_bar_toggle_brightness_summary">在状态栏上左右滑动以调整亮度</string>
+    <string name="status_bar_toggle_info">亮度自动调整已启用</string>
+    <string name="status_bar_signal_text_title">信号状态样式</string>
+    <string name="status_bar_style_icon">图标</string>
+    <string name="status_bar_style_hidden">隐藏</string>
+    <string name="status_bar_signal_text_show_text">文字</string>
+    <string name="status_bar_battery_status_percentage">百分比</string>
+    <string name="status_bar_battery_status_circle">环形</string>
+    <string name="status_bar_battery_status_circle_percentage">环形与百分比</string>
+
+    <!-- Status bar notification count -->
+    <string name="status_bar_notif_count_title">显示通知数量</string>
+    <string name="status_bar_notif_count_summary">显示有多少条正在等候中的通知</string>
+
+    <string name="lockscreen_maximize_widgets_title">最大化锁屏小部件</string>
+    <string name="lockscreen_maximize_widgets_summary">开启屏幕时将最小化解锁界面并默认显示最大化的锁屏小部件</string>
+
+    <!-- Custom lock screen background -->
+    <string name="lockscreen_custom_background_title">背景</string>
+    <string name="lockscreen_custom_background_dialog_title">选择颜色</string>
+    <string name="lockscreen_background_result_successful">背景已成功改变</string>
+    <string name="lockscreen_background_result_not_successful">背景未被改变</string>
+    <string name="lockscreen_background_color_fill">颜色填充</string>
+    <string name="lockscreen_background_custom_image">自定义图片</string>
+    <string name="lockscreen_background_default_wallpaper">默认墙纸</string>
+
+    <!-- Sound settings screen, setting check box label -->
+    <string name="volume_adjust_sounds_enable_title">音量调整提示音</string>
+    <!-- Sound settings screen, setting check box summary -->
+    <string name="volume_adjust_sounds_enable_summary">使用音量键调整音量时将播放提示音</string>
+
+    <!-- Launch music player when headset is connected -->
+    <string name="headset_connect_player_title">启动音乐播放器</string>
+    <string name="headset_connect_player_summary">插入耳机时启动默认音乐播放器</string>
+
+    <!-- Safe headset volume restore checkbox -->
+    <string name="safe_headset_volume_title">耳机安全音量</string>
+    <string name="safe_headset_volume_summary">第一次插入耳机时防止音量过大</string>
+
+    <!-- Automatic brightness customization -->
+    <string name="light_sensor_current_value">目前光线传感器值: <xliff:g id="light_level">%d</xliff:g> lux</string>
+    <string name="auto_brightness_dialog_title">自动亮度级别</string>
+    <string name="auto_brightness_adjust_button">调整</string>
+    <string name="auto_brightness_reset_button">重置</string>
+    <string name="auto_brightness_split_dialog_title">分离亮度级别</string>
+    <string name="auto_brightness_reset_dialog_title">重置级别?</string>
+    <string name="auto_brightness_reset_confirmation">所有亮度级别都将被还原为默认值.</string>
+    <string name="auto_brightness_split_lux_format">分离位置 (在 <xliff:g id="min">%1$d</xliff:g> 到 <xliff:g id="max">%2$d</xliff:g> lux 之间选择)</string>
+    <string name="auto_brightness_level_options">亮度级别选项</string>
+    <string name="auto_brightness_menu_edit_lux">环境亮度范围</string>
+    <string name="auto_brightness_menu_split">分离</string>
+    <string name="auto_brightness_menu_remove">删除</string>
 </resources>

@@ -31,6 +31,9 @@ import android.util.Log;
 import android.view.IWindowManager;
 import android.view.Surface;
 
+import com.android.internal.view.RotationPolicy;
+import com.android.settings.Utils;
+
 
 public class DisplayRotation extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -43,6 +46,7 @@ public class DisplayRotation extends SettingsPreferenceFragment implements
     private static final String ROTATION_90_PREF = "display_rotation_90";
     private static final String ROTATION_180_PREF = "display_rotation_180";
     private static final String ROTATION_270_PREF = "display_rotation_270";
+    private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
 
     private CheckBoxPreference mAccelerometer;
     private CheckBoxPreference mLockScreenRotationPref;
@@ -50,6 +54,7 @@ public class DisplayRotation extends SettingsPreferenceFragment implements
     private CheckBoxPreference mRotation90Pref;
     private CheckBoxPreference mRotation180Pref;
     private CheckBoxPreference mRotation270Pref;
+    private CheckBoxPreference mSwapVolumeButtons;
 
     public static final int ROTATION_0_MODE = 1;
     public static final int ROTATION_90_MODE = 2;
@@ -87,6 +92,17 @@ public class DisplayRotation extends SettingsPreferenceFragment implements
         mRotation90Pref.setChecked((mode & ROTATION_90_MODE) != 0);
         mRotation180Pref.setChecked((mode & ROTATION_180_MODE) != 0);
         mRotation270Pref.setChecked((mode & ROTATION_270_MODE) != 0);
+
+        mSwapVolumeButtons = (CheckBoxPreference) prefSet.findPreference(KEY_SWAP_VOLUME_BUTTONS);
+        if (mSwapVolumeButtons != null) {
+            if (!Utils.hasVolumeRocker(getActivity())) {
+                prefSet.removePreference(mSwapVolumeButtons);
+            } else {
+                int swapVolumeKeys = Settings.System.getInt(getContentResolver(),
+                        Settings.System.SWAP_VOLUME_KEYS_ON_ROTATION, 0);
+                mSwapVolumeButtons.setChecked(swapVolumeKeys > 0);
+            }
+        }
     }
 
     @Override
@@ -160,6 +176,13 @@ public class DisplayRotation extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
                     Settings.System.LOCKSCREEN_ROTATION, value ? 1 : 0);
             return true;
+        } else if (preference == mSwapVolumeButtons) {
+            Context context = getActivity().getApplicationContext();
+            Settings.System.putInt(context.getContentResolver(),
+                    Settings.System.SWAP_VOLUME_KEYS_ON_ROTATION,
+                    mSwapVolumeButtons.isChecked()
+                    ? (Utils.isTablet(context) ? 2 : 1)
+                    : 0);
         }
 
         return super.onPreferenceTreeClick(preferenceScreen, preference);
