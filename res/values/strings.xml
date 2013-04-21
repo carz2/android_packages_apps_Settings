@@ -4600,6 +4600,8 @@
     <string name="icon_picker_gallery_title">Gallery</string>
     <string name="icon_picker_pack_title">Icon pack</string>
 
+    <string name="volume_keys_control_ring_stream">Volume keys control ringtone volume</string>
+
     <!--- Volume key cursor control -->
     <string name="volume_key_cursor_control_title">Volume key cursor control</string>
     <string name="volume_key_cursor_control_off">Disabled</string>
