@@ -186,8 +186,8 @@ public class RingerVolumePreference extends VolumePreference {
             mCheckBoxes[i] = checkbox;
         }
 
-        CheckBox linkCheckBox = (CheckBox) view.findViewById(R.id.link_ring_and_volume);
-        CheckBox linkMuteStates = (CheckBox) view.findViewById(R.id.link_mutes);
+        final CheckBox linkCheckBox = (CheckBox) view.findViewById(R.id.link_ring_and_volume);
+        final CheckBox linkMuteStates = (CheckBox) view.findViewById(R.id.link_mutes);
         final CheckBox volumeKeysControlRingStream = (CheckBox) view.findViewById(R.id.volume_keys_control_ring_stream);
 
         final View ringerSection = view.findViewById(R.id.ringer_section);
