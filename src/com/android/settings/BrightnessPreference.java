@@ -419,4 +419,3 @@ public class BrightnessPreference extends SeekBarDialogPreference implements
         };
     }
 }
-

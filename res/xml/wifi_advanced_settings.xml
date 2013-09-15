@@ -31,6 +31,11 @@
             android:entries="@array/wifi_sleep_policy_entries"
             android:entryValues="@array/wifi_sleep_policy_values"
             />
+    <CheckBoxPreference
+            android:key="wifi_scan_always_available"
+            android:title="@string/wifi_scan_always_available"
+            android:summary="@string/wifi_scan_always_available_summary"
+            android:persistent="false" />
 
     <ListPreference
             android:key="wifi_idle_mn"
@@ -72,6 +77,11 @@
             android:persistent="false"
             android:fragment="com.android.settings.wifi.WifiPriority"
             />
+
+    <Preference
+            android:key="install_credentials"
+            android:title="@string/wifi_install_credentials"
+            android:persistent="false" />
 
     <CheckBoxPreference
             android:key="suspend_optimizations"
