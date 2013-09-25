@@ -1881,8 +1881,6 @@
     <string name="help_label" msgid="1107174367904110532">"Справка"</string>
     <string name="user_account_title" msgid="1127193807312271167">"Аккаунт для контента"</string>
     <string name="user_picture_title" msgid="7297782792000291692">"Документ с фото"</string>
-    <string name="cell_broadcast_settings" msgid="8415582011920085222">"Широковещательная передача сообщений"</string>
-    <string name="cell_broadcast_settings_summary" msgid="3301339398950905913">"Выберите типы экстренных оповещений на экране."</string>
 
     <!-- Quiet hours -->
     <string name="quiet_hours_title">Тихие часы</string>

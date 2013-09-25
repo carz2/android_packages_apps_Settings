@@ -211,6 +211,7 @@ public class AdvancedWifiSettings extends SettingsPreferenceFragment
 
         sleepTimeoutPref.setSummary("");
         Log.e(TAG, "Invalid wifi idle timeout value: " + value);
+    }
 
     private void updateFrequencyBandSummary(Preference frequencyBandPref, int index) {
         String[] summaries = getResources().getStringArray(R.array.wifi_frequency_band_entries);

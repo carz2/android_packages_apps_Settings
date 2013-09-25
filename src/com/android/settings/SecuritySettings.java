@@ -291,7 +291,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
             }
         }
 
-<<<<<<< HEAD
         boolean isTelephony = pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY);
         if (isTelephony) {
             addPreferencesFromResource(R.xml.security_settings_app_sms);
@@ -300,7 +299,7 @@ public class SecuritySettings extends SettingsPreferenceFragment
             int smsSecurityCheck = Integer.valueOf(mSmsSecurityCheck.getValue());
             updateSmsSecuritySummary(smsSecurityCheck);
          }
-=======
+
         mNotificationAccess = findPreference(KEY_NOTIFICATION_ACCESS);
         if (mNotificationAccess != null) {
             final int total = NotificationAccessSettings.getListenersCount(mPM);
@@ -320,7 +319,6 @@ public class SecuritySettings extends SettingsPreferenceFragment
                 }
             }
         }
->>>>>>> android-4.3_r2.2
 
         return root;
     }
